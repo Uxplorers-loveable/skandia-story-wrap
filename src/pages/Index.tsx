@@ -1,12 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/wrapped/HeroSection";
+import { SavingsSection } from "@/components/wrapped/SavingsSection";
+import { PensionsSection } from "@/components/wrapped/PensionsSection";
+import { InsuranceSection } from "@/components/wrapped/InsuranceSection";
+import { AchievementsSection } from "@/components/wrapped/AchievementsSection";
+import { FutureSection } from "@/components/wrapped/FutureSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-[hsl(220,20%,10%)] scroll-smooth">
+      <HeroSection />
+      <SavingsSection />
+      <PensionsSection />
+      <InsuranceSection />
+      <AchievementsSection />
+      <FutureSection />
     </div>
   );
 };
