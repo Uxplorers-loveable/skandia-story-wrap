@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
-
 export const HeroSection = () => {
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     setVisible(true);
   }, []);
-
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)]">
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)]">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
@@ -19,7 +15,7 @@ export const HeroSection = () => {
       <div className={`relative z-10 text-center px-6 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3 mb-8">
           <Sparkles className="w-5 h-5 text-primary" />
-          <span className="text-primary font-medium">Skandia Wrapped 2024</span>
+          <span className="text-primary font-medium">Skandia Wrapped 2025</span>
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
@@ -40,6 +36,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
