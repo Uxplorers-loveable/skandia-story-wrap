@@ -2,63 +2,47 @@ import { useEffect, useRef, useState } from "react";
 import { Rocket, ArrowRight, Target, TrendingUp, PiggyBank } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "./AnimatedCounter";
-
 export const FutureSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.3
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const projections = {
     savings2025: 65200000,
     pensionProgress: 55,
-    independence: 7.5,
+    independence: 7.5
   };
-
-  const actions = [
-    {
-      icon: TrendingUp,
-      title: "Aumenta tus aportes",
-      description: "Simula cómo pequeños cambios multiplican tu futuro",
-      cta: "Calcular impacto",
-      color: "primary",
-    },
-    {
-      icon: Target,
-      title: "Revisa tu proyección pensional",
-      description: "Descubre cuánto más necesitas para el retiro que sueñas",
-      cta: "Ver proyección",
-      color: "accent",
-    },
-    {
-      icon: PiggyBank,
-      title: "Protege aún más",
-      description: "Conoce seguros que se adaptan a tu nueva etapa",
-      cta: "Explorar opciones",
-      color: "secondary",
-    },
-  ];
-
-  return (
-    <section
-      ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)] px-6 py-20"
-    >
+  const actions = [{
+    icon: TrendingUp,
+    title: "Aumenta tus aportes",
+    description: "Simula cómo pequeños cambios multiplican tu futuro",
+    cta: "Calcular impacto",
+    color: "primary"
+  }, {
+    icon: Target,
+    title: "Revisa tu proyección pensional",
+    description: "Descubre cuánto más necesitas para el retiro que sueñas",
+    cta: "Ver proyección",
+    color: "accent"
+  }, {
+    icon: PiggyBank,
+    title: "Protege aún más",
+    description: "Conoce seguros que se adaptan a tu nueva etapa",
+    cta: "Explorar opciones",
+    color: "secondary"
+  }];
+  return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)] px-6 py-20">
       <div className="max-w-5xl w-full">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Header */}
@@ -95,7 +79,7 @@ export const FutureSection = () => {
             </div>
 
             <div className="bg-gradient-to-br from-secondary/20 to-primary/20 border border-secondary/30 rounded-2xl p-6 text-center">
-              <p className="text-white/70 mb-2 text-sm">Años para tu libertad</p>
+              <p className="text-white/70 mb-2 text-sm">Años para tu libertad financiers </p>
               <p className="text-4xl font-bold text-white mb-1">
                 <AnimatedCounter end={projections.independence} decimals={1} isVisible={isVisible} />
               </p>
@@ -106,15 +90,10 @@ export const FutureSection = () => {
           {/* Actions */}
           <div className="space-y-4 mb-12">
             {actions.map((action, index) => {
-              const Icon = action.icon;
-              return (
-                <div
-                  key={index}
-                  className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-primary/30 transition-all group ${
-                    isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-                  }`}
-                  style={{ transitionDelay: `${index * 150}ms` }}
-                >
+            const Icon = action.icon;
+            return <div key={index} className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-primary/30 transition-all group ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`} style={{
+              transitionDelay: `${index * 150}ms`
+            }}>
                   <div className="flex items-start gap-4">
                     <div className={`p-3 bg-${action.color}/20 rounded-xl`}>
                       <Icon className={`w-6 h-6 text-${action.color}`} />
@@ -122,18 +101,14 @@ export const FutureSection = () => {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-1">{action.title}</h3>
                       <p className="text-white/60 text-sm mb-4">{action.description}</p>
-                      <Button 
-                        variant="outline" 
-                        className="bg-white/5 border-white/20 text-white hover:bg-primary hover:text-white hover:border-primary group-hover:translate-x-1 transition-transform"
-                      >
+                      <Button variant="outline" className="bg-white/5 border-white/20 text-white hover:bg-primary hover:text-white hover:border-primary group-hover:translate-x-1 transition-transform">
                         {action.cta}
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
 
           {/* Final message */}
@@ -145,10 +120,7 @@ export const FutureSection = () => {
               <p className="text-xl text-white/70 mb-8">
                 Tus decisiones financieras reflejan la vida que estás construyendo.
               </p>
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 rounded-full shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.5)] transition-all"
-              >
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 rounded-full shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.5)] transition-all">
                 Comienza tu mejor año
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -156,6 +128,5 @@ export const FutureSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

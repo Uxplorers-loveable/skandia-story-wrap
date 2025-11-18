@@ -1,40 +1,29 @@
 import { useEffect, useRef, useState } from "react";
 import { Shield, Calendar, Heart } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
-
 export const InsuranceSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.3
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const insuranceData = {
     totalInsured: 250000000,
     daysProtected: 365,
     assistancesUsed: 8,
-    yearPayments: 3200000,
+    yearPayments: 3200000
   };
-
-  return (
-    <section
-      ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,22%,14%)] to-[hsl(30,15%,15%)] px-6 py-20"
-    >
+  return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,22%,14%)] to-[hsl(30,15%,15%)] px-6 py-20">
       <div className="max-w-5xl w-full">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Header */}
@@ -63,37 +52,7 @@ export const InsuranceSection = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary/20 rounded-xl">
-                  <Calendar className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-white mb-2">
-                    <AnimatedCounter end={insuranceData.assistancesUsed} isVisible={isVisible} />
-                  </p>
-                  <p className="text-sm text-white/60">Asistencias utilizadas</p>
-                  <p className="text-xs text-white/40 mt-1">Siempre estuvimos contigo</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/20 rounded-xl">
-                  <Heart className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-white mb-2">
-                    $<AnimatedCounter end={insuranceData.yearPayments / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
-                  </p>
-                  <p className="text-sm text-white/60">Invertido en protección</p>
-                  <p className="text-xs text-white/40 mt-1">La tranquilidad no tiene precio</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Emotional message */}
           <div className="bg-gradient-to-r from-secondary/10 via-primary/10 to-secondary/10 border border-secondary/20 rounded-2xl p-8 text-center">
@@ -103,6 +62,5 @@ export const InsuranceSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
