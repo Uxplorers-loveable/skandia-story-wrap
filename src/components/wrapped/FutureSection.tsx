@@ -79,7 +79,7 @@ export const FutureSection = () => {
             </div>
 
             <div className="bg-gradient-to-br from-secondary/20 to-primary/20 border border-secondary/30 rounded-2xl p-6 text-center">
-              <p className="text-white/70 mb-2 text-sm">Años para tu libertad financiers </p>
+              <p className="text-white/70 mb-2 text-sm">Años para tu libertad financiera   </p>
               <p className="text-4xl font-bold text-white mb-1">
                 <AnimatedCounter end={projections.independence} decimals={1} isVisible={isVisible} />
               </p>
