@@ -118,7 +118,7 @@ export const FutureSection = () => {
                 Este año diste pasos firmes hacia tu libertad financiera. <span className="font-bold text-primary">firmes</span> hacia tu independencia.
               </p>
               <p className="text-xl text-white/70 mb-8">
-                Tus decisiones financieras reflejan la vida que estás construyendo.
+                Tus decisiones reflejan la vida que estás construyendo.
               </p>
               <div className="flex items-center justify-center gap-4">
                 <p className="text-white/70 text-sm mr-2">Compartir:</p>
