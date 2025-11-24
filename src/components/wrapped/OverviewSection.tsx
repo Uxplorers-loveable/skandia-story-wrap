@@ -132,7 +132,7 @@ export const OverviewSection = () => {
               <p className="text-2xl font-bold text-white mb-1">
                 $<AnimatedCounter end={overviewData.taxBenefit / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
               </p>
-              <p className="text-xs text-white/60">Beneficio tributario</p>
+              <p className="text-xs text-white/60">Beneficio tributario 2025  </p>
             </div>
           </div>
 
