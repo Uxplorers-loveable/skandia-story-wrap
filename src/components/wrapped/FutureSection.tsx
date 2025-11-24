@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Rocket, ArrowRight, Target, TrendingUp, PiggyBank } from "lucide-react";
+import { Rocket, ArrowRight, Target, TrendingUp, PiggyBank, Facebook, Twitter, Linkedin, Instagram, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "./AnimatedCounter";
 export const FutureSection = () => {
@@ -120,10 +120,39 @@ export const FutureSection = () => {
               <p className="text-xl text-white/70 mb-8">
                 Tus decisiones financieras reflejan la vida que estás construyendo.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 rounded-full shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.5)] transition-all">
-                Comienza tu mejor año
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              <div className="flex items-center justify-center gap-4">
+                <p className="text-white/70 text-sm mr-2">Compartir:</p>
+                <button 
+                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
+                  aria-label="Compartir en Facebook"
+                >
+                  <Facebook className="w-5 h-5 text-white" />
+                </button>
+                <button 
+                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
+                  aria-label="Compartir en Twitter"
+                >
+                  <Twitter className="w-5 h-5 text-white" />
+                </button>
+                <button 
+                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
+                  aria-label="Compartir en LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 text-white" />
+                </button>
+                <button 
+                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
+                  aria-label="Compartir en Instagram"
+                >
+                  <Instagram className="w-5 h-5 text-white" />
+                </button>
+                <button 
+                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
+                  aria-label="Más opciones para compartir"
+                >
+                  <Share2 className="w-5 h-5 text-white" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
