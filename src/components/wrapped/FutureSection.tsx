@@ -19,7 +19,7 @@ export const FutureSection = () => {
     return () => observer.disconnect();
   }, []);
   const projections = {
-    savings2025: 65200000,
+    contributions2026: 18500000,
     pensionProgress: 55,
     independence: 7.5
   };
@@ -49,23 +49,23 @@ export const FutureSection = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-6">
               <Rocket className="w-4 h-4 text-primary" />
-              <span className="text-primary text-sm font-medium">Tu 2025</span>
+              <span className="text-primary text-sm font-medium">Tu 2026</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
-              El mejor año{" "}
-              <span className="block text-primary">aún está por venir</span>
+              Proyecta tu{" "}
+              <span className="block text-primary">crecimiento en 2026</span>
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Con el impulso que llevas, estas son tus proyecciones para 2025
+              Si mantienes tu disciplina, estas son tus proyecciones de aportes para 2026
             </p>
           </div>
 
           {/* Projections */}
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-6 text-center">
-              <p className="text-white/70 mb-2 text-sm">Patrimonio proyectado</p>
+              <p className="text-white/70 mb-2 text-sm">Aportes proyectados 2026</p>
               <p className="text-4xl font-bold text-white mb-1">
-                $<AnimatedCounter end={projections.savings2025 / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
+                $<AnimatedCounter end={projections.contributions2026 / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
               </p>
               <p className="text-xs text-white/50">Si mantienes tu ritmo</p>
             </div>
