@@ -20,7 +20,7 @@ export const FutureSection = () => {
   }, []);
   const projections = {
     contributions2026: 18500000,
-    pensionProgress: 55,
+    pensionWeeks2026: 48,
     independence: 7.5
   };
   const actions = [{
@@ -71,11 +71,11 @@ export const FutureSection = () => {
             </div>
 
             <div className="bg-gradient-to-br from-accent/20 to-secondary/20 border border-accent/30 rounded-2xl p-6 text-center">
-              <p className="text-white/70 mb-2 text-sm">Meta de retiro</p>
+              <p className="text-white/70 mb-2 text-sm">Aportes a pensión 2026</p>
               <p className="text-4xl font-bold text-white mb-1">
-                <AnimatedCounter end={projections.pensionProgress} suffix="%" isVisible={isVisible} />
+                <AnimatedCounter end={projections.pensionWeeks2026} suffix=" semanas" isVisible={isVisible} />
               </p>
-              <p className="text-xs text-white/50">Progreso estimado</p>
+              <p className="text-xs text-white/50">Cotizaciones proyectadas</p>
             </div>
 
             <div className="bg-gradient-to-br from-secondary/20 to-primary/20 border border-secondary/30 rounded-2xl p-6 text-center">
