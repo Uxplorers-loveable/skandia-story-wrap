@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { TrendingUp, Sparkles, PiggyBank } from "lucide-react";
+import { TrendingUp, Sparkles, PiggyBank, ArrowUpCircle } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
 
 export const SavingsSection = () => {
@@ -28,6 +28,7 @@ export const SavingsSection = () => {
     totalSaved: 45800000,
     bestMonth: "Octubre",
     yearComparison: 18.2,
+    highestContribution: 8500000,
   };
 
   return (
@@ -58,7 +59,7 @@ export const SavingsSection = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
               <div className="flex items-start justify-between mb-4">
                 <div className="p-3 bg-primary/20 rounded-xl">
@@ -81,6 +82,19 @@ export const SavingsSection = () => {
               </div>
               <p className="text-3xl font-bold text-white mb-2">{savingsData.bestMonth}</p>
               <p className="text-sm text-white/60">Tu mes más activo</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-6 hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] transition-all">
+              <div className="flex items-start justify-between mb-4">
+                <div className="p-3 bg-white/20 rounded-xl">
+                  <ArrowUpCircle className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-xs text-white/70">Aporte máximo</span>
+              </div>
+              <p className="text-3xl font-bold text-white mb-2">
+                $<AnimatedCounter end={savingsData.highestContribution / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
+              </p>
+              <p className="text-sm text-white/80">Mayor aporte del 2025</p>
             </div>
           </div>
 
