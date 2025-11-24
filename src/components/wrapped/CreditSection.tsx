@@ -46,8 +46,7 @@ export const CreditSection = () => {
               <span className="text-primary text-sm font-medium">Crédito</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
-              Tu progreso en
-              <span className="block text-primary mt-2">el cumplimiento del crédito</span>
+              Cómo va tu <span className="text-primary">crédito</span>
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
               Ya llevas{" "}
