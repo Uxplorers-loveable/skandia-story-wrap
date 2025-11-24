@@ -31,7 +31,7 @@ export const AchievementsSection = () => {
     },
     {
       icon: Star,
-      title: "Visionario",
+      title: "Con visión",
       description: "Diversificaste tu portafolio en 5 sectores diferentes",
       color: "accent",
     },
