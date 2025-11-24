@@ -66,7 +66,7 @@ export const OverviewSection = () => {
                 <div className="p-3 bg-white/20 rounded-xl">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <span className="text-xs text-white/70">Capital creado 2025   </span>
+                <span className="text-xs text-white/70">Capital creado 2025      </span>
               </div>
               <p className="text-4xl md:text-5xl font-bold text-white mb-2">
                 $<AnimatedCounter end={overviewData.capitalCreated / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
