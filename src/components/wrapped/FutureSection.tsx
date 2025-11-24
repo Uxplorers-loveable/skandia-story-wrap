@@ -56,7 +56,7 @@ export const FutureSection = () => {
               <span className="block text-primary">crecimiento en 2026</span>
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Si mantienes tu disciplina, estas son tus proyecciones de aportes para 2026
+              Si mantienes tu disciplina, estas son tus proyecciones para 2026
             </p>
           </div>
 
