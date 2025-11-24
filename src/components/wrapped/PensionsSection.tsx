@@ -48,7 +48,7 @@ export const PensionsSection = () => {
           {/* Weeks Cotized Highlight */}
           <div className="flex justify-center mb-12">
             <div className="bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30 rounded-2xl p-8 text-center hover:shadow-[0_0_30px_hsl(var(--accent)/0.3)] transition-all">
-              <p className="text-sm text-white/70 mb-2">Semanas cotizadas en 2024</p>
+              <p className="text-sm text-white/70 mb-2">Semanas cotizadas en 2025</p>
               <p className="text-7xl font-bold text-white mb-2">
                 <AnimatedCounter end={pensionData.weeksCotized} suffix="" isVisible={isVisible} />
               </p>
