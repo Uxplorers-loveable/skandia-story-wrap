@@ -61,7 +61,7 @@ export const FutureSection = () => {
           </div>
 
           {/* Projections */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
             <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-6 text-center">
               <p className="text-white/70 mb-2 text-sm">Aportes proyectados 2026</p>
               <p className="text-4xl font-bold text-white mb-1">
@@ -76,14 +76,6 @@ export const FutureSection = () => {
                 <AnimatedCounter end={projections.pensionWeeks2026} suffix=" semanas" isVisible={isVisible} />
               </p>
               <p className="text-xs text-white/50">Cotizaciones proyectadas</p>
-            </div>
-
-            <div className="bg-gradient-to-br from-secondary/20 to-primary/20 border border-secondary/30 rounded-2xl p-6 text-center">
-              <p className="text-white/70 mb-2 text-sm">Años para tu libertad financiera   </p>
-              <p className="text-4xl font-bold text-white mb-1">
-                <AnimatedCounter end={projections.independence} decimals={1} isVisible={isVisible} />
-              </p>
-              <p className="text-xs text-white/50">Si aceleras tu ahorro</p>
             </div>
           </div>
 
