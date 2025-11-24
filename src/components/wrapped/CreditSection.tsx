@@ -124,8 +124,8 @@ export const CreditSection = () => {
           {/* Emotional message */}
           <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-primary/20 rounded-2xl p-8 text-center">
             <p className="text-2xl md:text-3xl text-white font-light leading-relaxed">
-              "Tu <span className="text-primary font-semibold">compromiso constante</span> es la clave hacia una vida{" "}
-              <span className="text-accent font-semibold">sin deudas</span>"
+              "Tu <span className="text-primary font-semibold">compromiso constante</span> es la clave hacia una{" "}
+              <span className="text-accent font-semibold">mejor gestión financiera</span>"
             </p>
           </div>
         </div>
