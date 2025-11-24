@@ -56,7 +56,7 @@ export const PensionsSection = () => {
             <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-8 text-center hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] transition-all">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Wallet className="w-5 h-5 text-primary" />
-                <p className="text-sm text-white/70">Cesantías ahorradas en 2024</p>
+                <p className="text-sm text-white/70">Cesantías ahorradas en 2025</p>
               </div>
               <p className="text-7xl font-bold text-white mb-2">
                 $<AnimatedCounter end={pensionData.cesantiasSaved / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
