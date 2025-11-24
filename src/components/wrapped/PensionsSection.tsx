@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Clock, TrendingUp, Target } from "lucide-react";
+import { Clock, TrendingUp, Target, Wallet } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
 export const PensionsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,7 +21,8 @@ export const PensionsSection = () => {
     weeksCotized: 248,
     totalContributed: 18500000,
     progressToGoal: 42,
-    comparedToSimilar: 15
+    comparedToSimilar: 15,
+    cesantiasSaved: 12300000
   };
   return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,12%)] to-[hsl(220,22%,14%)] px-6 py-20">
       <div className="max-w-5xl w-full">
@@ -46,13 +47,25 @@ export const PensionsSection = () => {
           </div>
 
           {/* Weeks Cotized Highlight */}
-          <div className="flex justify-center mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30 rounded-2xl p-8 text-center hover:shadow-[0_0_30px_hsl(var(--accent)/0.3)] transition-all">
               <p className="text-sm text-white/70 mb-2">Semanas cotizadas en 2025</p>
               <p className="text-7xl font-bold text-white mb-2">
                 <AnimatedCounter end={pensionData.weeksCotized} suffix="" isVisible={isVisible} />
               </p>
               <p className="text-lg text-white/80">Construyendo tu futuro semana a semana</p>
+            </div>
+
+            {/* Cesantías Module */}
+            <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-8 text-center hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] transition-all">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Wallet className="w-5 h-5 text-primary" />
+                <p className="text-sm text-white/70">Cesantías ahorradas en 2024</p>
+              </div>
+              <p className="text-7xl font-bold text-white mb-2">
+                $<AnimatedCounter end={pensionData.cesantiasSaved / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
+              </p>
+              <p className="text-lg text-white/80">Tu respaldo para el futuro</p>
             </div>
           </div>
 
