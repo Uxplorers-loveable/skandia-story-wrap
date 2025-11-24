@@ -1,40 +1,29 @@
 import { useEffect, useRef, useState } from "react";
 import { Clock, TrendingUp, Target } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
-
 export const PensionsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.3
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const pensionData = {
     weeksCotized: 248,
     totalContributed: 18500000,
     progressToGoal: 42,
-    comparedToSimilar: 15,
+    comparedToSimilar: 15
   };
-
-  return (
-    <section
-      ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,12%)] to-[hsl(220,22%,14%)] px-6 py-20"
-    >
+  return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,12%)] to-[hsl(220,22%,14%)] px-6 py-20">
       <div className="max-w-5xl w-full">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Header */}
@@ -69,34 +58,7 @@ export const PensionsSection = () => {
 
           {/* Progress Visualization */}
           <div className="mb-12">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-sm text-white/70">Progreso hacia tu meta de retiro</span>
-                <span className="text-2xl font-bold text-accent">
-                  <AnimatedCounter end={pensionData.progressToGoal} decimals={0} suffix="%" isVisible={isVisible} />
-                </span>
-              </div>
-              <div className="h-4 bg-white/10 rounded-full overflow-hidden mb-6">
-                <div 
-                  className={`h-full bg-gradient-to-r from-accent to-primary rounded-full transition-all duration-2000`}
-                  style={{ width: isVisible ? `${pensionData.progressToGoal}%` : '0%' }}
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm text-white/60 mb-1">Total aportado</p>
-                  <p className="text-2xl font-bold text-white">
-                    $<AnimatedCounter end={pensionData.totalContributed / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
-                  </p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm text-white/60 mb-1">Meta de retiro</p>
-                  <p className="text-2xl font-bold text-white">
-                    $<AnimatedCounter end={(pensionData.totalContributed / pensionData.progressToGoal) * 100 / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Stats */}
@@ -138,6 +100,5 @@ export const PensionsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
