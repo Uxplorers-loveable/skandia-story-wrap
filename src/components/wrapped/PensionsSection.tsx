@@ -95,7 +95,7 @@ export const PensionsSection = () => {
                   <p className="text-3xl font-bold text-white mb-2">
                     +<AnimatedCounter end={pensionData.comparedToSimilar} suffix="%" isVisible={isVisible} />
                   </p>
-                  <p className="text-sm text-white/80">Mejor que usuarios similares</p>
+                  <p className="text-sm text-white/80">Mejor que clientes similares a ti    </p>
                 </div>
               </div>
             </div>
