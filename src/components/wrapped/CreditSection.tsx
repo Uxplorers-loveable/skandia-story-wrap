@@ -91,7 +91,7 @@ export const CreditSection = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             {/* Total Credit */}
             <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-6 hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] transition-all">
               <div className="flex items-start justify-between mb-4">
@@ -118,20 +118,6 @@ export const CreditSection = () => {
                 <AnimatedCounter end={creditData.onTimePayments} decimals={0} suffix={`/${creditData.monthlyPayments}`} isVisible={isVisible} />
               </p>
               <p className="text-sm text-white/60">100% de cumplimiento</p>
-            </div>
-
-            {/* Goal */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
-              <div className="flex items-start justify-between mb-4">
-                <div className="p-3 bg-accent/20 rounded-xl">
-                  <Target className="w-6 h-6 text-accent" />
-                </div>
-                <span className="text-xs text-white/50">Avance</span>
-              </div>
-              <p className="text-3xl font-bold text-white mb-2">
-                <AnimatedCounter end={creditData.completionPercentage} decimals={0} suffix="%" isVisible={isVisible} />
-              </p>
-              <p className="text-sm text-white/60">Hacia finalizar tu crédito</p>
             </div>
           </div>
 
