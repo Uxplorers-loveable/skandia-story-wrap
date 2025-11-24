@@ -37,7 +37,7 @@ export const AchievementsSection = () => {
     },
     {
       icon: Award,
-      title: "Comprometido",
+      title: "Con enfoque",
       description: "Superaste tu meta de ahorro en un 15%",
       color: "secondary",
     },
