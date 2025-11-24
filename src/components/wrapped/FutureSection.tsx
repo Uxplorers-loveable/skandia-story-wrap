@@ -107,7 +107,7 @@ export const FutureSection = () => {
           <div className="bg-gradient-to-r from-primary via-accent to-secondary p-1 rounded-3xl">
             <div className="bg-[hsl(220,20%,10%)] rounded-3xl p-12 text-center">
               <p className="text-3xl md:text-4xl text-white font-light leading-relaxed mb-6">
-                Este año diste pasos firmes hacia tu libertad financiera. <span className="font-bold text-primary">firmes</span> hacia tu independencia.
+                Este año diste pasos <span className="font-bold text-primary">firmes</span> hacia tu libertad financiera.
               </p>
               <p className="text-xl text-white/70 mb-8">
                 Tus decisiones reflejan la vida que estás construyendo.
