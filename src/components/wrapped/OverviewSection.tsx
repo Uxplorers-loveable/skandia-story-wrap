@@ -52,7 +52,7 @@ export const OverviewSection = () => {
                 <div className="p-3 bg-white/20 rounded-xl">
                   <DollarSign className="w-8 h-8 text-white" />
                 </div>
-                <span className="text-xs text-white/70">Total invertido</span>
+                <span className="text-xs text-white/70">Total invertido en Skandia    </span>
               </div>
               <p className="text-4xl md:text-5xl font-bold text-white mb-2">
                 $<AnimatedCounter end={overviewData.totalInvested / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
@@ -87,7 +87,7 @@ export const OverviewSection = () => {
               <p className="text-2xl font-bold text-white mb-1">
                 $<AnimatedCounter end={overviewData.totalContributions / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
               </p>
-              <p className="text-xs text-white/60 mb-2">Aportes totales</p>
+              <p className="text-xs text-white/60 mb-2">Aportes totales 2025  </p>
               <div className="flex items-center gap-1">
                 <span className="text-primary text-sm font-semibold">
                   +<AnimatedCounter end={overviewData.contributionGrowth} decimals={1} suffix="%" isVisible={isVisible} />
@@ -106,7 +106,7 @@ export const OverviewSection = () => {
               <p className="text-2xl font-bold text-white mb-1">
                 $<AnimatedCounter end={overviewData.totalWithdrawals / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
               </p>
-              <p className="text-xs text-white/60">Retiros realizados</p>
+              <p className="text-xs text-white/60">Retiros realizados 2025   </p>
             </div>
 
             {/* Returns */}
@@ -119,7 +119,7 @@ export const OverviewSection = () => {
               <p className="text-2xl font-bold text-white mb-1">
                 $<AnimatedCounter end={overviewData.totalReturns / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
               </p>
-              <p className="text-xs text-white/60">Rendimientos generados</p>
+              <p className="text-xs text-white/60">Rendimientos generados 2025   </p>
             </div>
 
             {/* Tax Benefit */}
