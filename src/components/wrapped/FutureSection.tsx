@@ -115,41 +115,26 @@ export const FutureSection = () => {
           <div className="bg-gradient-to-r from-primary via-accent to-secondary p-1 rounded-3xl">
             <div className="bg-[hsl(220,20%,10%)] rounded-3xl p-12 text-center">
               <p className="text-3xl md:text-4xl text-white font-light leading-relaxed mb-6">
-                Este año diste pasos <span className="font-bold text-primary">firmes</span> hacia tu independencia.
+                Este año diste pasos firmes hacia tu libertad financiera. <span className="font-bold text-primary">firmes</span> hacia tu independencia.
               </p>
               <p className="text-xl text-white/70 mb-8">
                 Tus decisiones financieras reflejan la vida que estás construyendo.
               </p>
               <div className="flex items-center justify-center gap-4">
                 <p className="text-white/70 text-sm mr-2">Compartir:</p>
-                <button 
-                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
-                  aria-label="Compartir en Facebook"
-                >
+                <button className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110" aria-label="Compartir en Facebook">
                   <Facebook className="w-5 h-5 text-white" />
                 </button>
-                <button 
-                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
-                  aria-label="Compartir en Twitter"
-                >
+                <button className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110" aria-label="Compartir en Twitter">
                   <Twitter className="w-5 h-5 text-white" />
                 </button>
-                <button 
-                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
-                  aria-label="Compartir en LinkedIn"
-                >
+                <button className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110" aria-label="Compartir en LinkedIn">
                   <Linkedin className="w-5 h-5 text-white" />
                 </button>
-                <button 
-                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
-                  aria-label="Compartir en Instagram"
-                >
+                <button className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110" aria-label="Compartir en Instagram">
                   <Instagram className="w-5 h-5 text-white" />
                 </button>
-                <button 
-                  className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110"
-                  aria-label="Más opciones para compartir"
-                >
+                <button className="p-3 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/30 rounded-full transition-all hover:scale-110" aria-label="Más opciones para compartir">
                   <Share2 className="w-5 h-5 text-white" />
                 </button>
               </div>
