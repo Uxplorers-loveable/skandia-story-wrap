@@ -30,17 +30,17 @@ export const FutureSection = () => {
     cta: "Calcular impacto",
     color: "primary"
   }, {
-    icon: Target,
-    title: "Revisa tu proyección pensional",
-    description: "Descubre cuánto más necesitas para el retiro que sueñas",
-    cta: "Ver proyección",
-    color: "accent"
-  }, {
     icon: PiggyBank,
     title: "Protege aún más",
     description: "Conoce seguros que se adaptan a tu nueva etapa",
     cta: "Explorar opciones",
     color: "secondary"
+  }, {
+    icon: Target,
+    title: "Conecta con tu Financial Planner",
+    description: "Agenda una sesión personalizada para optimizar tu estrategia financiera",
+    cta: "Contactar ahora",
+    color: "accent"
   }];
   return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)] px-6 py-20">
       <div className="max-w-5xl w-full">
