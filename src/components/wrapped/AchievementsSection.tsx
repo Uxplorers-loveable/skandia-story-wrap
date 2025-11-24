@@ -108,7 +108,7 @@ export const AchievementsSection = () => {
               <span className="font-bold text-primary">constante</span>{" "}
               que el de{" "}
               <span className="font-bold text-accent">78%</span>{" "}
-              de nuestros clientes"
+              de clientes como tu"
             </p>
             <p className="text-lg text-white/60">
               Y eso es solo el comienzo. Tu futuro financiero se ve brillante.
