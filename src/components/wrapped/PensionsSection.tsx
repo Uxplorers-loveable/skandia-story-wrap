@@ -48,52 +48,53 @@ export const PensionsSection = () => {
               <span className="block text-accent">hoy</span>
             </h2>
             <p className="text-xl text-white/70">
-              Has cotizado{" "}
+              Ya llevas{" "}
               <span className="text-white font-semibold">
-                <AnimatedCounter end={pensionData.weeksCotized} suffix=" semanas" isVisible={isVisible} />
+                <AnimatedCounter end={pensionData.progressToGoal} decimals={0} suffix="%" isVisible={isVisible} />
               </span>{" "}
-              este año
+              del camino hacia tu retiro
             </p>
           </div>
 
-          {/* Progress Circle */}
-          <div className="flex justify-center mb-16">
-            <div className="relative">
-              <svg className="w-64 h-64 transform -rotate-90">
-                <circle
-                  cx="128"
-                  cy="128"
-                  r="110"
-                  stroke="currentColor"
-                  strokeWidth="12"
-                  fill="none"
-                  className="text-white/10"
+          {/* Weeks Cotized Highlight */}
+          <div className="flex justify-center mb-12">
+            <div className="bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30 rounded-2xl p-8 text-center hover:shadow-[0_0_30px_hsl(var(--accent)/0.3)] transition-all">
+              <p className="text-sm text-white/70 mb-2">Semanas cotizadas en 2024</p>
+              <p className="text-7xl font-bold text-white mb-2">
+                <AnimatedCounter end={pensionData.weeksCotized} suffix="" isVisible={isVisible} />
+              </p>
+              <p className="text-lg text-white/80">Construyendo tu futuro semana a semana</p>
+            </div>
+          </div>
+
+          {/* Progress Visualization */}
+          <div className="mb-12">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-sm text-white/70">Progreso hacia tu meta de retiro</span>
+                <span className="text-2xl font-bold text-accent">
+                  <AnimatedCounter end={pensionData.progressToGoal} decimals={0} suffix="%" isVisible={isVisible} />
+                </span>
+              </div>
+              <div className="h-4 bg-white/10 rounded-full overflow-hidden mb-6">
+                <div 
+                  className={`h-full bg-gradient-to-r from-accent to-primary rounded-full transition-all duration-2000`}
+                  style={{ width: isVisible ? `${pensionData.progressToGoal}%` : '0%' }}
                 />
-                <circle
-                  cx="128"
-                  cy="128"
-                  r="110"
-                  stroke="url(#gradient)"
-                  strokeWidth="12"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeDasharray={`${2 * Math.PI * 110}`}
-                  strokeDashoffset={`${2 * Math.PI * 110 * (1 - pensionData.progressToGoal / 100)}`}
-                  className={`transition-all duration-2000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-                  style={{ transitionDelay: '300ms' }}
-                />
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(var(--accent))" />
-                    <stop offset="100%" stopColor="hsl(var(--primary))" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <p className="text-6xl font-bold text-white">
-                  <AnimatedCounter end={pensionData.progressToGoal} suffix="%" isVisible={isVisible} />
-                </p>
-                <p className="text-sm text-white/60 mt-2">de tu meta de retiro</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm text-white/60 mb-1">Total aportado</p>
+                  <p className="text-2xl font-bold text-white">
+                    $<AnimatedCounter end={pensionData.totalContributed / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm text-white/60 mb-1">Meta de retiro</p>
+                  <p className="text-2xl font-bold text-white">
+                    $<AnimatedCounter end={(pensionData.totalContributed / pensionData.progressToGoal) * 100 / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
+                  </p>
+                </div>
               </div>
             </div>
           </div>
