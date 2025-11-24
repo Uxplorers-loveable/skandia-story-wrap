@@ -38,11 +38,7 @@ export const PensionsSection = () => {
               <span className="block text-accent">hoy</span>
             </h2>
             <p className="text-xl text-white/70">
-              Has alcanzado{" "}
-              <span className="text-white font-semibold">
-                <AnimatedCounter end={pensionData.progressToGoal} decimals={0} suffix="%" isVisible={isVisible} />
-              </span>{" "}
-              de tus cotizaciones este año
+              Cada semana fortaleces tu seguridad futura
             </p>
           </div>
 
