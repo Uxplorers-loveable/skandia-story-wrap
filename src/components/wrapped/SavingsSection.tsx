@@ -101,8 +101,8 @@ export const SavingsSection = () => {
           {/* Emotional message */}
           <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-primary/20 rounded-2xl p-8 text-center">
           <p className="text-2xl md:text-3xl text-white font-light leading-relaxed">
-            "Tu <span className="text-primary font-semibold">constancia</span> te acercó más a tus metas que a{" "}
-            <span className="text-accent font-semibold">78%</span> de nuestros clientes"
+            "Tu <span className="text-primary font-semibold">constancia</span> te acercó a tus metas más que al{" "}
+            <span className="text-accent font-semibold">78%</span> de nuestros clientes. ¡Sigue así!"
           </p>
           </div>
         </div>
