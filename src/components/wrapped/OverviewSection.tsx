@@ -1,28 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { TrendingUp, DollarSign, ArrowDownCircle, ArrowUpCircle, Sparkles, Receipt } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
-
 export const OverviewSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.3
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const overviewData = {
     totalInvested: 125000000,
     totalContributions: 48000000,
@@ -30,14 +24,9 @@ export const OverviewSection = () => {
     totalWithdrawals: 12500000,
     totalReturns: 14800000,
     capitalCreated: 62800000,
-    taxBenefit: 8400000,
+    taxBenefit: 8400000
   };
-
-  return (
-    <section
-      ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,25%,15%)] to-[hsl(220,20%,12%)] px-6 py-20"
-    >
+  return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,25%,15%)] to-[hsl(220,20%,12%)] px-6 py-20">
       <div className="max-w-6xl w-full">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Header */}
@@ -77,7 +66,7 @@ export const OverviewSection = () => {
                 <div className="p-3 bg-white/20 rounded-xl">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <span className="text-xs text-white/70">Capital creado</span>
+                <span className="text-xs text-white/70">Capital creado 2025  </span>
               </div>
               <p className="text-4xl md:text-5xl font-bold text-white mb-2">
                 $<AnimatedCounter end={overviewData.capitalCreated / 1000000} decimals={1} suffix="M" isVisible={isVisible} />
@@ -156,6 +145,5 @@ export const OverviewSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
