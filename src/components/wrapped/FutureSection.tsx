@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Rocket, ArrowRight, Target, TrendingUp, PiggyBank, Facebook, Twitter, Linkedin, Instagram, Share2 } from "lucide-react";
+import { Rocket, ArrowRight, Target, TrendingUp, PiggyBank, Facebook, Twitter, Linkedin, Instagram, Share2, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "./AnimatedCounter";
 export const FutureSection = () => {
@@ -36,7 +36,7 @@ export const FutureSection = () => {
     cta: "Explorar opciones",
     color: "secondary"
   }, {
-    icon: Target,
+    icon: Phone,
     title: "Conecta con tu Financial Planner",
     description: "Agenda una sesión personalizada para optimizar tu estrategia financiera",
     cta: "Contactar ahora",
