@@ -18,6 +18,10 @@ export const HeroSection = () => {
           <span className="text-primary font-medium">Skandia Wrapped 2025</span>
         </div>
         
+        <p className="text-2xl md:text-3xl text-white/80 mb-4 font-light">
+          Hola, <span className="text-primary font-semibold">Carlos</span>
+        </p>
+        
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
           Tu año en
           <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
