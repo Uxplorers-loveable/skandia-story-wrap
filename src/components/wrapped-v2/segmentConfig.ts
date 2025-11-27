@@ -91,9 +91,9 @@ export const investorSegment: SegmentConfig = {
       emotionalOpener: 'La tranquilidad de saber que estás cubierto no tiene precio.',
       highlightMetric: { label: 'Cobertura activa', value: '3', suffix: ' pólizas' },
       details: [
-        'Mantuviste activas tus pólizas todo el año',
-        'Tu cobertura de vida protege a tu familia',
-        'Renovaste tu seguro de salud a tiempo'
+        'Mantuviste activo tu seguro durante el año',
+        'Tu protección financiera estuvo vigente siempre',
+        'Aseguraste tu plan de ahorro y respaldo a tiempo'
       ],
       insight: 'Estar protegido es el mejor regalo que puedes darte.'
     },
