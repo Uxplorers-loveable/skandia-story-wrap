@@ -82,6 +82,34 @@ export const investorSegment: SegmentConfig = {
         'Tu fondo de cesantías creció consistentemente'
       ],
       insight: 'La constancia de hoy es la tranquilidad de mañana.'
+    },
+    {
+      id: 'insurance',
+      icon: 'HeartPulse',
+      title: 'Tus seguros',
+      summaryStatement: 'Protegiste lo que más importa',
+      emotionalOpener: 'La tranquilidad de saber que estás cubierto no tiene precio.',
+      highlightMetric: { label: 'Cobertura activa', value: '3', suffix: ' pólizas' },
+      details: [
+        'Mantuviste activas tus pólizas todo el año',
+        'Tu cobertura de vida protege a tu familia',
+        'Renovaste tu seguro de salud a tiempo'
+      ],
+      insight: 'Estar protegido es el mejor regalo que puedes darte.'
+    },
+    {
+      id: 'credits',
+      icon: 'Wallet',
+      title: 'Tus créditos',
+      summaryStatement: 'Manejaste tu crédito con responsabilidad',
+      emotionalOpener: 'Un buen historial crediticio abre puertas al futuro.',
+      highlightMetric: { label: 'Pagos a tiempo', value: '100', suffix: '%' },
+      details: [
+        'Cumpliste con todos tus pagos programados',
+        'Tu score crediticio se mantuvo saludable',
+        'Redujiste tu deuda total en un 15%'
+      ],
+      insight: 'La disciplina financiera construye oportunidades.'
     }
   ],
   ctaActions: [
