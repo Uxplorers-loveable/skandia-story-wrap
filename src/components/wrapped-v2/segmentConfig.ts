@@ -37,7 +37,7 @@ export interface CTAAction {
 // Cliente enfocado en inversión
 export const investorSegment: SegmentConfig = {
   id: 'investor',
-  heroTitle: 'Tu disciplina está dando frutos',
+  heroTitle: 'Tu año en Skandia',
   heroSubtitle: 'Un año de decisiones inteligentes',
   missionStatement: 'En Skandia te acompañamos para mejorar tu futuro financiero. Este año, lo hiciste con determinación.',
   overallMessage: '2025 fue un año donde tu constancia se tradujo en crecimiento real.',
