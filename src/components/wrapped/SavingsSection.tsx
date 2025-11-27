@@ -1,41 +1,30 @@
 import { useEffect, useRef, useState } from "react";
 import { TrendingUp, Sparkles, PiggyBank, ArrowUpCircle } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
-
 export const SavingsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.3
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const savingsData = {
     growth: 24.5,
     totalSaved: 45800000,
     bestMonth: "Octubre",
     yearComparison: 18.2,
-    highestContribution: 8500000,
+    highestContribution: 8500000
   };
-
-  return (
-    <section
-      ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,25%,15%)] to-[hsl(220,20%,12%)] px-6 py-20"
-    >
+  return <section ref={sectionRef} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[hsl(220,25%,15%)] to-[hsl(220,20%,12%)] px-6 py-20">
       <div className="max-w-5xl w-full">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Header */}
@@ -65,7 +54,7 @@ export const SavingsSection = () => {
                 <div className="p-3 bg-primary/20 rounded-xl">
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-xs text-white/50">vs. 2023</span>
+                <span className="text-xs text-white/50">vs. 2024</span>
               </div>
               <p className="text-3xl font-bold text-white mb-2">
                 +<AnimatedCounter end={savingsData.yearComparison} decimals={1} suffix="%" isVisible={isVisible} />
@@ -107,6 +96,5 @@ export const SavingsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
