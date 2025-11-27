@@ -85,7 +85,7 @@ export const investorSegment: SegmentConfig = {
     },
     {
       id: 'insurance',
-      icon: 'HeartPulse',
+      icon: 'Umbrella',
       title: 'Tus seguros',
       summaryStatement: 'Protegiste lo que más importa',
       emotionalOpener: 'La tranquilidad de saber que estás cubierto no tiene precio.',

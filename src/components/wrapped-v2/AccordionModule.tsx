@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, TrendingUp, PiggyBank, Shield, Footprints, Calendar, Eye, Lightbulb, Star, Activity } from "lucide-react";
+import { ChevronDown, TrendingUp, PiggyBank, Shield, Footprints, Calendar, Eye, Lightbulb, Star, Activity, Umbrella, Wallet } from "lucide-react";
 import { AnimatedCounter } from "../wrapped/AnimatedCounter";
 import { ModuleConfig } from "./segmentConfig";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -13,7 +13,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Eye,
   Lightbulb,
   Star,
-  Activity
+  Activity,
+  Umbrella,
+  Wallet
 };
 
 interface AccordionModuleProps {
