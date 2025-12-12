@@ -99,8 +99,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             'Estrategias globales.',
             'Diversificación más allá de los mercados tradicionales.',
             'Mayor potencial de rendimiento ajustado al riesgo.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         },
         {
           title: 'Fondos Alternativos',
@@ -109,8 +108,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             'Posibilidades de aumentar la rentabilidad.',
             'Reducen la dependencia de los mercados tradicionales.',
             'Conectan con nuevas tendencias y economías emergentes.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         },
         {
           title: 'Inversiones en dólares (Offshore)',
@@ -119,8 +117,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             '100% digital y rápido.',
             'Asesoría y planificación en dólares.',
             'Inversión con libertad, liquidez y eficiencia fiscal.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         },
         {
           title: 'Crea Patrimonio',
@@ -129,8 +126,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             'Flexibilidad para determinar beneficiarios y sobrevivientes.',
             'Beneficio tributario según lo establecido por ley.',
             'Suma asegurada alcanzada en caso de muerte o incapacidad total y permanente.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         }
       ],
       ctaLabel: 'Contactar ahora'
