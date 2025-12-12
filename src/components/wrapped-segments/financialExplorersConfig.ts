@@ -69,7 +69,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Acumulado para tu pensión',
+          label: 'Ahorro pensional total',
           value: '48',
           suffix: 'M',
           icon: 'TrendingUp',
