@@ -140,18 +140,10 @@ export const SegmentModuleSection = ({
                                     <span>{bullet}</span>
                                   </li>)}
                               </ul>}
-                            {card.ctaLabel && (
-                              <a
-                                href="https://channel.skandia.com.co/course/back-to-skool-1"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
-                                  {card.ctaLabel}
-                                  <ArrowRight className="w-4 h-4 ml-2" />
-                                </Button>
-                              </a>
-                            )}
+                            {card.ctaLabel && <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                                {card.ctaLabel}
+                                <ArrowRight className="w-4 h-4 ml-2" />
+                              </Button>}
                           </div>
                         </div>
                       </div>;
