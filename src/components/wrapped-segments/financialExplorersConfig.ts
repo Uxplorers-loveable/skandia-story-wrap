@@ -136,12 +136,6 @@ export const financialExplorersConfig: FESegmentConfig = {
           icon: 'Play'
         },
         {
-          title: 'Calculadora de metas',
-          description: 'Proyecta cuánto necesitas para cumplir tus sueños.',
-          ctaLabel: 'Usar calculadora',
-          icon: 'Calculator'
-        },
-        {
           title: 'Perspectivas de inversión',
           description: 'Aprende finanzas personales de forma sencilla.',
           ctaLabel: 'Ver videos',
