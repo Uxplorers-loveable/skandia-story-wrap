@@ -156,7 +156,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
         {
           title: 'Perspectivas de inversión',
-          description: 'Seguimiento detallado de tu portafolio.',
+          description: 'Visión experta del mercado y tendencias.',
           ctaLabel: 'Ver reportes',
           icon: 'FileText'
         }
