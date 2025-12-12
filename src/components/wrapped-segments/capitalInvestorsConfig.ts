@@ -126,9 +126,9 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Crea Patrimonio',
           description: 'Seguro individual de pensiones para ahorrar una reserva a largo plazo.',
           bullets: [
-            'Planificación patrimonial integral',
-            'Estructuras eficientes de sucesión',
-            'Protección de activos familiares'
+            'Flexibilidad para determinar beneficiarios y sobrevivientes.',
+            'Beneficio tributario según lo establecido por ley.',
+            'Suma asegurada alcanzada en caso de muerte o incapacidad total y permanente.'
           ],
           ctaLabel: 'Conocer más'
         }
