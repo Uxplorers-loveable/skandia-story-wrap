@@ -94,7 +94,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       cards: [
         {
           title: 'Estrategias sofisticadas de inversión',
-          description: 'Accede a portafolios gestionados con técnicas avanzadas.',
+          description: 'Combinan diversificación global, análisis cuantitativo y estrategias de retorno absoluto.',
           bullets: [
             'Gestión activa por expertos del mercado',
             'Estrategias de cobertura y protección',
