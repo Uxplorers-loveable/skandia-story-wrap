@@ -89,7 +89,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       id: 'oportunidades-2026',
       icon: 'Lightbulb',
       headline: 'Tus oportunidades 2026',
-      title: 'Alternativas para maximizar tu capital',
+      title: '¡Proyéctate hacia lo global!',
       summaryStatement: 'Soluciones sofisticadas diseñadas para inversionistas como tú.',
       cards: [
         {
