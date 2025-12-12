@@ -101,7 +101,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       cards: [
         {
           title: 'Invest-ed',
-          description: 'Tu entrada al mundo de las inversiones de forma simple y educativa.',
+          description: 'Una herramienta de diversificación e inversión, probando diferentes activos.',
           bullets: [
             'Aprende mientras inviertes',
             'Montos accesibles para comenzar',
