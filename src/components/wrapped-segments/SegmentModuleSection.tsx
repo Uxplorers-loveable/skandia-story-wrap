@@ -173,7 +173,7 @@ export const SegmentModuleSection = ({
                       </p>
                       <p className="text-muted-foreground">con tu Financial Planner</p>
                     </div>
-                    <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 shadow-lg transition-all shrink-0">
+                    <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 shadow-lg transition-all shrink-0 rounded-full">
                       {module.ctaLabel}
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
