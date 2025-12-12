@@ -76,7 +76,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Falta para pensionarte',
+          label: 'Faltan para pensionarte',
           value: '18',
           suffix: 'años',
           icon: 'Calendar',
