@@ -96,9 +96,9 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Estrategias sofisticadas de inversión',
           description: 'Combinan diversificación global, análisis cuantitativo y estrategias de retorno absoluto.',
           bullets: [
-            'Gestión activa por expertos del mercado',
-            'Estrategias de cobertura y protección',
-            'Optimización fiscal de inversiones'
+            'Estrategias globales.',
+            'Diversificación más allá de los mercados tradicionales.',
+            'Mayor potencial de rendimiento ajustado al riesgo.'
           ],
           ctaLabel: 'Conocer más'
         },
