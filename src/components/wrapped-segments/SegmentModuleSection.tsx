@@ -216,19 +216,21 @@ export const SegmentModuleSection = ({ modules }: SegmentModuleSectionProps) => 
               {/* Module CTA */}
               {module.ctaLabel && (
                 <div className="mt-8">
-                  <div className="bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/30 rounded-2xl p-8 text-center shadow-[0_0_40px_hsl(var(--primary)/0.15)]">
-                    <div className="p-3 bg-primary/20 rounded-xl w-fit mx-auto mb-4">
+                  <div className="bg-gradient-to-r from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/30 rounded-2xl p-6 md:p-8 shadow-[0_0_40px_hsl(var(--primary)/0.15)] flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="p-3 bg-primary/20 rounded-xl shrink-0">
                       <Star className="w-6 h-6 text-primary" />
                     </div>
-                    <p className="text-xl md:text-2xl font-semibold text-white mb-2">
-                      Fortalece tu seguridad financiera
-                    </p>
-                    <p className="text-white/70 mb-6">
-                      este nuevo año con un asesor.
-                    </p>
+                    <div className="flex-1 text-center md:text-left">
+                      <p className="text-lg md:text-xl font-semibold text-white">
+                        Fortalece tu seguridad financiera
+                      </p>
+                      <p className="text-white/70">
+                        este nuevo año con un asesor.
+                      </p>
+                    </div>
                     <Button 
                       size="lg"
-                      className="bg-primary text-white hover:bg-primary/90 px-8 shadow-lg hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all"
+                      className="bg-primary text-white hover:bg-primary/90 px-8 shadow-lg hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all shrink-0"
                     >
                       {module.ctaLabel}
                       <ArrowRight className="w-5 h-5 ml-2" />
