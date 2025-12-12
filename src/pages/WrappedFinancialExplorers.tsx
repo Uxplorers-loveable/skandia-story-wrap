@@ -22,7 +22,7 @@ const WrappedFinancialExplorers = () => {
             </div>
           </div>
           <div className="text-center mt-12">
-            <p className="text-white/40 text-sm">Skandia Wrapped 2025 • Experiencia personalizada</p>
+            <p className="text-white/40 text-sm">Skandia Wrapped 2025</p>
           </div>
         </div>
       </section>
