@@ -62,7 +62,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       summaryStatement: 'Cada paso que diste este año te acerca a un futuro más seguro.',
       statCards: [
         {
-          label: 'Semanas cotizadas',
+          label: 'Cotizadas en 2025',
           value: '48',
           suffix: 'semanas',
           icon: 'Calendar',
