@@ -130,7 +130,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       summaryStatement: 'Contenido pensado para quienes están comenzando su camino.',
       cards: [
         {
-          title: 'Guía del ahorro',
+          title: 'Back to Skool',
           description: 'Consejos prácticos para empezar a ahorrar hoy.',
           ctaLabel: 'Ver guía',
           icon: 'BookOpen'
