@@ -100,8 +100,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
             'Reducen la dependencia de mercados tradicionales.',
             'Brindan acceso a tendencias globales y nuevas economías.',
             'Complementan tu estrategia con activos innovadores.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         }
       ],
       ctaLabel: 'Contactar ahora'
