@@ -69,9 +69,9 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Crecimiento pensiones',
-          value: '+12.3',
-          suffix: '%',
+          label: 'Acumulado para tu pensión',
+          value: '48',
+          suffix: 'M',
           icon: 'TrendingUp',
           highlight: true
         },
