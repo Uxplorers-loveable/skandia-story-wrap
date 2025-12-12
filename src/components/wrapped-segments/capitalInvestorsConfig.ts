@@ -106,9 +106,9 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Fondos Alternativos',
           description: 'Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.',
           bullets: [
-            'Private equity y venture capital',
-            'Real estate e infraestructura',
-            'Hedge funds y estrategias absolutas'
+            'Posibilidades de aumentar la rentabilidad.',
+            'Reducen la dependencia de los mercados tradicionales.',
+            'Conectan con nuevas tendencias y economías emergentes.'
           ],
           ctaLabel: 'Conocer más'
         },
