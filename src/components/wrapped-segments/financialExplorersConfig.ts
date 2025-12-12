@@ -106,8 +106,7 @@ export const financialExplorersConfig: FESegmentConfig = {
             '100% digital.',
             'Libertad de invertir cualquier monto.',
             'Solución tecnológica que facilita la estrategia de inversión.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         },
         {
           title: 'Universales',
@@ -116,8 +115,7 @@ export const financialExplorersConfig: FESegmentConfig = {
             'Pagos por PSE, débito o descuento por nómina.',
             'Inversiones en portafolios estables y conservadores.',
             'Retiros sin costo.'
-          ],
-          ctaLabel: 'Conocer más'
+          ]
         }
       ],
       ctaLabel: 'Contactar ahora'
