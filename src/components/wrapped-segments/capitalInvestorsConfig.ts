@@ -152,7 +152,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Informe del CEI',
           description: 'Análisis detallado del panorama económico.',
           ctaLabel: 'Ver informe',
-          icon: 'Calendar'
+          icon: 'FileText'
         },
         {
           title: 'Reportes trimestrales',
