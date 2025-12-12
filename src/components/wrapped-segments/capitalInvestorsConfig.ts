@@ -62,30 +62,23 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       summaryStatement: 'Tu visión estratégica y disciplina generaron resultados excepcionales.',
       statCards: [
         {
-          label: 'Rentabilidad portafolio',
-          value: '+18.5',
-          suffix: '%',
+          label: 'Meses en los que aportaste',
+          value: 'x',
+          suffix: 'de 12',
+          icon: 'Calendar',
+          highlight: true
+        },
+        {
+          label: 'Comparativa 2024',
+          value: 'xx',
+          suffix: '% más en 2025',
           icon: 'TrendingUp',
           highlight: true
         },
         {
-          label: 'vs Benchmark',
-          value: '+3.2',
-          suffix: 'pts',
-          icon: 'Target',
-          highlight: true
-        },
-        {
-          label: 'Clases de activos',
-          value: '5',
-          suffix: 'diversificados',
-          icon: 'PieChart',
-          highlight: false
-        },
-        {
-          label: 'Rendimientos generados',
-          value: '$14.8',
-          suffix: 'M',
+          label: 'Aportes totales',
+          value: '$xxx',
+          suffix: 'este 2025',
           icon: 'DollarSign',
           highlight: false
         }
