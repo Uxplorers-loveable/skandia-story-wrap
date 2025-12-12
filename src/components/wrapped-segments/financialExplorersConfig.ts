@@ -142,7 +142,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           icon: 'Calculator'
         },
         {
-          title: 'Videos educativos',
+          title: 'Perspectivas de inversión',
           description: 'Aprende finanzas personales de forma sencilla.',
           ctaLabel: 'Ver videos',
           icon: 'Play'
