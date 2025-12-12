@@ -76,9 +76,9 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Rendimiento cesantías',
-          value: '+9.8',
-          suffix: '%',
+          label: 'Para pensionarte',
+          value: '18',
+          suffix: 'años',
           icon: 'TrendingUp',
           highlight: false
         },
