@@ -104,7 +104,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
         {
           title: 'Fondos Alternativos',
-          description: 'Diversifica con activos no correlacionados al mercado tradicional.',
+          description: 'Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.',
           bullets: [
             'Private equity y venture capital',
             'Real estate e infraestructura',
