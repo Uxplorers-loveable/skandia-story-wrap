@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { TrendingUp, PiggyBank, Shield, Lightbulb, Compass, Star, Play, FileText, Globe, Calendar, BookOpen, Calculator, ArrowRight, DollarSign, Target, PieChart } from "lucide-react";
+import { TrendingUp, PiggyBank, Shield, Lightbulb, Compass, Star, Play, FileText, Globe, Calendar, BookOpen, Calculator, ArrowRight, DollarSign, Target, PieChart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const iconMap: Record<string, React.ComponentType<{
   className?: string;
@@ -148,7 +148,7 @@ export const SegmentModuleSection = ({
               {module.ctaLabel && <div className="mt-8">
                   <div className="bg-gradient-to-r from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/30 rounded-2xl p-6 md:p-8 shadow-[0_0_40px_hsl(var(--primary)/0.15)] flex flex-col md:flex-row items-center gap-4 md:gap-6">
                     <div className="p-3 bg-primary/20 rounded-xl shrink-0">
-                      <Star className="w-6 h-6 text-primary" />
+                      <Users className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1 text-center md:text-left">
                       <p className="text-lg md:text-xl font-semibold text-white">
