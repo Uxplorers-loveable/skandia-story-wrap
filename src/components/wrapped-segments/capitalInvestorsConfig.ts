@@ -146,7 +146,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Análisis de mercados globales',
           description: 'Perspectiva experta de los principales mercados.',
           ctaLabel: 'Ver video',
-          icon: 'Globe'
+          icon: 'Play'
         },
         {
           title: 'Informe del CEI',
