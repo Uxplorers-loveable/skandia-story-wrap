@@ -155,7 +155,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           icon: 'FileText'
         },
         {
-          title: 'Reportes trimestrales',
+          title: 'Perspectivas de inversión',
           description: 'Seguimiento detallado de tu portafolio.',
           ctaLabel: 'Ver reportes',
           icon: 'FileText'
