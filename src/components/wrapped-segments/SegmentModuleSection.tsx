@@ -208,7 +208,7 @@ export const SegmentModuleSection = ({ modules }: SegmentModuleSectionProps) => 
               {module.closingMessage && (
                 <div className="mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center">
                   <p className="text-lg text-white/80 italic">
-                    "{module.closingMessage}"
+                    {module.closingMessage}
                   </p>
                 </div>
               )}
