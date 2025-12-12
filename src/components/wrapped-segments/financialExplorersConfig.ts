@@ -76,7 +76,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Para recibir tu pensión',
+          label: 'Para llegar a tu pensión',
           value: '18',
           suffix: 'años',
           icon: 'Calendar',
