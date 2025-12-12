@@ -79,7 +79,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           label: 'Falta para pensionarte',
           value: '18',
           suffix: 'años',
-          icon: 'DollarSign',
+          icon: 'Calendar',
           highlight: false
         },
         {
