@@ -111,7 +111,7 @@ export const financialExplorersConfig: FESegmentConfig = {
         },
         {
           title: 'Universales',
-          description: 'Seguros que protegen y a la vez te ayudan a ahorrar.',
+          description: 'Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.',
           bullets: [
             'Protección para ti y tu familia',
             'Componente de ahorro incluido',
