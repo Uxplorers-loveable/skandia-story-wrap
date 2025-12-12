@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { TrendingUp, PiggyBank, Shield, Lightbulb, Compass, Star, Play, FileText, Globe, Calendar, BookOpen, Calculator, ArrowRight, DollarSign, Target, PieChart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AnimatedCounter } from "@/components/wrapped/AnimatedCounter";
 const iconMap: Record<string, React.ComponentType<{
   className?: string;
 }>> = {
@@ -95,12 +96,31 @@ export const SegmentModuleSection = ({
               {module.statCards && module.statCards.length > 0 && <div className={`grid gap-4 mb-6 ${module.statCards.length === 3 ? 'md:grid-cols-3' : module.statCards.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-2'}`}>
                   {module.statCards.map((stat, statIndex) => {
               const StatIcon = stat.icon ? iconMap[stat.icon] : null;
-              return <div key={statIndex} className={`${stat.highlight ? `bg-gradient-to-br ${gradient} backdrop-blur-sm` : 'bg-white/5 backdrop-blur-sm border-white/10'} rounded-2xl p-6 border transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)]`}>
+              // Parse numeric value for animation
+              const numericMatch = stat.value.match(/([+-]?)(\d+(?:\.\d+)?)/);
+              const prefix = numericMatch ? numericMatch[1] : '';
+              const numericValue = numericMatch ? parseFloat(numericMatch[2]) : 0;
+              const hasNumeric = numericMatch !== null;
+              
+              return <div 
+                key={statIndex} 
+                className={`${stat.highlight ? `bg-gradient-to-br ${gradient} backdrop-blur-sm` : 'bg-white/5 backdrop-blur-sm border-white/10'} rounded-2xl p-6 border transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                style={{ transitionDelay: `${moduleIndex * 200 + statIndex * 100 + 300}ms` }}
+              >
                         {StatIcon && <div className={`p-3 ${stat.highlight ? 'bg-white/20' : 'bg-primary/20'} rounded-xl w-fit mb-4`}>
                             <StatIcon className={`w-6 h-6 ${stat.highlight ? 'text-white' : 'text-primary'}`} />
                           </div>}
                         <p className="text-3xl md:text-4xl font-bold text-white mb-1">
-                          {stat.value}
+                          {hasNumeric ? (
+                            <AnimatedCounter
+                              end={numericValue}
+                              duration={2000}
+                              decimals={stat.value.includes('.') ? 1 : 0}
+                              prefix={prefix}
+                              suffix=""
+                              isVisible={isVisible}
+                            />
+                          ) : stat.value}
                           {stat.suffix && <span className="text-lg md:text-xl text-white/70 ml-1">{stat.suffix}</span>}
                         </p>
                         <p className="text-sm text-white/60">{stat.label}</p>
@@ -113,7 +133,11 @@ export const SegmentModuleSection = ({
               {module.cards && module.cards.length > 0 && <div className="space-y-4">
                   {module.cards.map((card, cardIndex) => {
               const CardIcon = card.icon ? iconMap[card.icon] : null;
-              return <div key={cardIndex} className={`bg-gradient-to-br ${gradient} backdrop-blur-sm rounded-2xl p-6 border transition-all duration-300 hover:scale-[1.01]`}>
+              return <div 
+                key={cardIndex} 
+                className={`bg-gradient-to-br ${gradient} backdrop-blur-sm rounded-2xl p-6 border transition-all duration-500 hover:scale-[1.01] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                style={{ transitionDelay: `${moduleIndex * 200 + cardIndex * 150 + 400}ms` }}
+              >
                         <div className="flex items-start gap-4">
                           {CardIcon && <div className="p-3 bg-white/10 rounded-xl shrink-0">
                               <CardIcon className="w-6 h-6 text-primary" />
@@ -138,14 +162,20 @@ export const SegmentModuleSection = ({
                 </div>}
 
               {/* Closing Message */}
-              {module.closingMessage && <div className="mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center">
+              {module.closingMessage && <div 
+                className={`mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                style={{ transitionDelay: `${moduleIndex * 200 + 600}ms` }}
+              >
                   <p className="text-lg text-white/80 italic">
                     {module.closingMessage}
                   </p>
                 </div>}
 
               {/* Module CTA */}
-              {module.ctaLabel && <div className="mt-8">
+              {module.ctaLabel && <div 
+                className={`mt-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                style={{ transitionDelay: `${moduleIndex * 200 + 700}ms` }}
+              >
                   <div className="bg-gradient-to-r from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/30 rounded-2xl p-6 md:p-8 shadow-[0_0_40px_hsl(var(--primary)/0.15)] flex flex-col md:flex-row items-center gap-4 md:gap-6">
                     <div className="p-3 bg-primary/20 rounded-xl shrink-0">
                       <Users className="w-6 h-6 text-primary" />
