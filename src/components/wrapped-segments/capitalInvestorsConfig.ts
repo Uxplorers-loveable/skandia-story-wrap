@@ -63,7 +63,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       statCards: [
         {
           label: 'Meses en los que aportaste',
-          value: 'x',
+          value: '10',
           suffix: 'de 12',
           icon: 'Calendar',
           highlight: true
