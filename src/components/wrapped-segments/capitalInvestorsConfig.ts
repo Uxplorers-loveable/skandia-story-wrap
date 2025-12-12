@@ -124,7 +124,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
         {
           title: 'Crea Patrimonio',
-          description: 'Construye un legado financiero para las siguientes generaciones.',
+          description: 'Seguro individual de pensiones para ahorrar una reserva a largo plazo.',
           bullets: [
             'Planificación patrimonial integral',
             'Estructuras eficientes de sucesión',
