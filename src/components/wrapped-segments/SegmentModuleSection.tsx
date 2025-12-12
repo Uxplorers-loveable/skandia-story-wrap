@@ -151,10 +151,8 @@ export const SegmentModuleSection = ({
                       <Users className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1 text-center md:text-left">
-                      <p className="text-lg md:text-xl font-semibold text-white">
-                        Perfila tu opción estratégica este 2026
-                      </p>
-                      <p className="text-white/70">junto a tu Financial Planner</p>
+                      <p className="text-lg md:text-xl font-semibold text-white">Conversa con tu Financial Planner</p>
+                      <p className="text-white/70">e identifica tu mejor opción este 2026</p>
                     </div>
                     <Button size="lg" className="bg-primary text-white hover:bg-primary/90 px-8 shadow-lg hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all shrink-0">
                       {module.ctaLabel}
