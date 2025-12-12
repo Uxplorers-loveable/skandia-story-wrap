@@ -69,16 +69,16 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           highlight: true
         },
         {
-          label: 'Comparativa 2024',
+          label: 'Crecimiento vs 2024',
           value: '+22',
-          suffix: '% más en 2025',
+          suffix: '%',
           icon: 'TrendingUp',
           highlight: true
         },
         {
-          label: 'Aportes totales',
-          value: '$xxx',
-          suffix: 'este 2025',
+          label: 'Aportes totales 2025',
+          value: '$48',
+          suffix: 'M',
           icon: 'DollarSign',
           highlight: false
         }
