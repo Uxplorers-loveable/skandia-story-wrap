@@ -152,7 +152,7 @@ export const SegmentModuleSection = ({
                     </div>
                     <div className="flex-1 text-center md:text-left">
                       <p className="text-lg md:text-xl font-semibold text-white">
-                        Fortalece tu seguridad financiera
+                        Perfila tu opción estratégica este 2026
                       </p>
                       <p className="text-white/70">este nuevo año con tu asesor</p>
                     </div>
