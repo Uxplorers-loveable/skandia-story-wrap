@@ -76,17 +76,17 @@ export const financialExplorersConfig: FESegmentConfig = {
           highlight: true
         },
         {
-          label: 'Saldo cesantías',
-          value: '$8.5',
-          suffix: 'M',
-          icon: 'PiggyBank',
-          highlight: false
-        },
-        {
           label: 'Rendimiento cesantías',
           value: '+9.8',
           suffix: '%',
           icon: 'TrendingUp',
+          highlight: false
+        },
+        {
+          label: 'Saldo cesantías',
+          value: '$8.5',
+          suffix: 'M',
+          icon: 'PiggyBank',
           highlight: false
         }
       ],
