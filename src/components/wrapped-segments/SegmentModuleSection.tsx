@@ -154,7 +154,7 @@ export const SegmentModuleSection = ({
                       <p className="text-lg md:text-xl font-semibold text-white">
                         Perfila tu opción estratégica este 2026
                       </p>
-                      <p className="text-white/70">este nuevo año con tu asesor</p>
+                      <p className="text-white/70">junto a tu Financial Planner</p>
                     </div>
                     <Button size="lg" className="bg-primary text-white hover:bg-primary/90 px-8 shadow-lg hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all shrink-0">
                       {module.ctaLabel}
