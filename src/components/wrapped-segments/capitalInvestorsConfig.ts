@@ -70,7 +70,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
         {
           label: 'Comparativa 2024',
-          value: 'xx',
+          value: '+22',
           suffix: '% más en 2025',
           icon: 'TrendingUp',
           highlight: true
