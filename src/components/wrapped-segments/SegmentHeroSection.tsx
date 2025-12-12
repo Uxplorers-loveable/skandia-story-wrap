@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Sparkles, Rocket } from "lucide-react";
+import skandiaLogo from "@/assets/skandia-logo.webp";
 
 interface SegmentHeroSectionProps {
   clientName: string;
@@ -28,6 +29,13 @@ export const SegmentHeroSection = ({ clientName, greeting, headline, segmentLabe
       </div>
 
       <div className={`relative z-10 text-center px-6 max-w-4xl transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        {/* Skandia Logo */}
+        <img 
+          src={skandiaLogo} 
+          alt="Skandia" 
+          className="h-8 md:h-10 mx-auto mb-8 object-contain"
+        />
+        
         <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3 mb-8">
           <Sparkles className="w-5 h-5 text-primary" />
           <span className="text-primary font-medium">Skandia Wrapped 2025</span>
