@@ -150,7 +150,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
         {
           title: 'Informe del CEI',
-          description: 'Sesiones exclusivas con nuestros estrategas.',
+          description: 'Análisis detallado del panorama económico.',
           ctaLabel: 'Ver calendario',
           icon: 'Calendar'
         },
