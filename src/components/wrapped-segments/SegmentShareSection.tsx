@@ -52,7 +52,7 @@ export const SegmentShareSection = ({
           {/* Footer */}
           <div className="text-center mt-12">
             <p className="text-muted-foreground text-sm">
-              Skandia Wrapped 2025 • Experiencia personalizada
+              Skandia Wrapped 2025
             </p>
           </div>
         </div>
