@@ -62,7 +62,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       summaryStatement: 'Tu visión estratégica y disciplina generaron resultados excepcionales.',
       statCards: [
         {
-          label: 'Meses en los que aportaste',
+          label: 'Meses aportando',
           value: '10',
           suffix: 'de 12',
           icon: 'Calendar',
