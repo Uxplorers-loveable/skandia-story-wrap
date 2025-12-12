@@ -1,11 +1,10 @@
 import { SegmentHeroSection } from "@/components/wrapped-segments/SegmentHeroSection";
 import { SegmentModuleSection } from "@/components/wrapped-segments/SegmentModuleSection";
-import { SegmentShareSection } from "@/components/wrapped-segments/SegmentShareSection";
 import { capitalInvestorsConfig } from "@/components/wrapped-segments/capitalInvestorsConfig";
 
 const WrappedCapitalInvestors = () => {
   const config = capitalInvestorsConfig;
-  const clientName = "Carlos"; // En producción vendría del backend
+  const clientName = "Carlos";
 
   return (
     <div className="bg-[hsl(220,20%,10%)] scroll-smooth">
@@ -16,11 +15,25 @@ const WrappedCapitalInvestors = () => {
         segmentLabel="Capital Investors"
       />
       <SegmentModuleSection modules={config.modules} />
-      <SegmentShareSection 
-        clientName={clientName}
-        finalMessage={config.finalMessage}
-        hashtag={config.hashtag}
-      />
+      
+      {/* Final Message */}
+      <section className="bg-gradient-to-b from-[hsl(220,20%,12%)] to-[hsl(220,20%,8%)] px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-primary via-accent to-secondary p-1 rounded-3xl">
+            <div className="bg-[hsl(220,20%,10%)] rounded-3xl p-12 text-center">
+              <p className="text-2xl md:text-3xl text-white font-light leading-relaxed mb-4">
+                {config.finalMessage}
+              </p>
+              <p className="text-xl text-primary font-semibold">
+                {config.hashtag}
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-white/40 text-sm">Skandia Wrapped 2025 • Experiencia personalizada</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

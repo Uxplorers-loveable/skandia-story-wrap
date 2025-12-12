@@ -13,6 +13,7 @@ export interface FEModuleConfig {
     suffix?: string;
   };
   cards?: CardConfig[];
+  statCards?: StatCardConfig[];
   details?: string[];
   insight?: string;
   closingMessage?: string;
@@ -26,6 +27,15 @@ export interface CardConfig {
   ctaLabel?: string;
   ctaUrl?: string;
   icon?: string;
+}
+
+export interface StatCardConfig {
+  label: string;
+  value: string;
+  suffix?: string;
+  description?: string;
+  icon?: string;
+  highlight?: boolean;
 }
 
 export interface FESegmentConfig {
@@ -50,22 +60,34 @@ export const financialExplorersConfig: FESegmentConfig = {
       headline: 'Tu 2025 en números',
       title: 'Así va la construcción de tus finanzas',
       summaryStatement: 'Cada paso que diste este año te acerca a un futuro más seguro.',
-      cards: [
+      statCards: [
         {
-          title: 'Pensiones',
-          bullets: [
-            'Semanas cotizadas en 2025: xx semanas',
-            'Tu fondo de pensiones creció xx%',
-            'Estás construyendo tu tranquilidad futura'
-          ]
+          label: 'Semanas cotizadas',
+          value: '48',
+          suffix: 'semanas',
+          icon: 'Calendar',
+          highlight: true
         },
         {
-          title: 'Cesantías',
-          bullets: [
-            'Saldo actual de cesantías: $xx',
-            'Rendimiento del año: xx%',
-            'Un respaldo para momentos importantes'
-          ]
+          label: 'Crecimiento pensiones',
+          value: '+12.3',
+          suffix: '%',
+          icon: 'TrendingUp',
+          highlight: true
+        },
+        {
+          label: 'Saldo cesantías',
+          value: '$8.5',
+          suffix: 'M',
+          icon: 'PiggyBank',
+          highlight: false
+        },
+        {
+          label: 'Rendimiento cesantías',
+          value: '+9.8',
+          suffix: '%',
+          icon: 'TrendingUp',
+          highlight: false
         }
       ],
       closingMessage: 'Los pasos que das hoy, transformarán tu mañana. ¡Descubre cómo fortalecer tu futuro para el 2026!'
