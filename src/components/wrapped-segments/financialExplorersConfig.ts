@@ -133,7 +133,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           title: 'Back to Skool',
           description: 'Aprende a organizar tu plan financiero desde cero.',
           ctaLabel: 'Ver video',
-          icon: 'BookOpen'
+          icon: 'Play'
         },
         {
           title: 'Calculadora de metas',
