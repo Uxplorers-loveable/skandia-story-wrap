@@ -131,7 +131,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       cards: [
         {
           title: 'Back to Skool',
-          description: 'Consejos prácticos para empezar a ahorrar hoy.',
+          description: 'Aprende a organizar tu plan financiero desde cero.',
           ctaLabel: 'Ver guía',
           icon: 'BookOpen'
         },
