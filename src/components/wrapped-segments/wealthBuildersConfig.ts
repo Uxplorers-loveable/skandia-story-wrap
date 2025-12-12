@@ -1,0 +1,115 @@
+// Configuración de Wealth Builders para Skandia Wrapped
+
+export interface WBModuleConfig {
+  id: string;
+  icon: string;
+  title: string;
+  headline?: string;
+  summaryStatement: string;
+  emotionalOpener?: string;
+  highlightMetric?: {
+    label: string;
+    value: string;
+    suffix?: string;
+  };
+  cards?: CardConfig[];
+  details?: string[];
+  insight?: string;
+  closingMessage?: string;
+  ctaLabel?: string;
+}
+
+export interface CardConfig {
+  title: string;
+  description?: string;
+  bullets?: string[];
+  ctaLabel?: string;
+  ctaUrl?: string;
+  icon?: string;
+}
+
+export interface WBSegmentConfig {
+  id: string;
+  clientName: string;
+  welcomeGreeting: string;
+  welcomeHeadline: string;
+  modules: WBModuleConfig[];
+  finalMessage: string;
+  hashtag: string;
+}
+
+export const wealthBuildersConfig: WBSegmentConfig = {
+  id: 'wealth-builders',
+  clientName: 'xxx',
+  welcomeGreeting: 'Hola xxx, tus finanzas cambiaron durante el 2025.',
+  welcomeHeadline: 'Es momento de explorar tu futuro financiero este 2026.',
+  modules: [
+    {
+      id: 'resumen-2025',
+      icon: 'TrendingUp',
+      headline: 'Tu 2025 en números',
+      title: '¡Así construiste tu patrimonio!',
+      summaryStatement: 'Tu constancia y estrategia marcaron la diferencia este año.',
+      cards: [
+        {
+          title: 'Tu actividad en 2025',
+          bullets: [
+            'Meses en los que aportaste: x de 12',
+            'Comparativa 2024: Aportaste xx% más en el 2025',
+            'Aportes totales: $xx este 2025'
+          ]
+        }
+      ],
+      closingMessage: '2026 viene con oportunidades para quienes crecen con estrategia, ¿te atreves a explorar tus posibilidades?'
+    },
+    {
+      id: 'oportunidades-2026',
+      icon: 'Lightbulb',
+      headline: 'Tus oportunidades 2026',
+      title: '¡Este año potencia tu rendimiento!',
+      summaryStatement: 'Descubre alternativas diseñadas para tu perfil de crecimiento.',
+      cards: [
+        {
+          title: 'Fondos Alternativos',
+          description: 'Diversifica tu portafolio con activos no tradicionales que buscan mayor rentabilidad.',
+          bullets: [
+            'Acceso a mercados privados y activos reales',
+            'Gestión profesional de inversiones sofisticadas',
+            'Potencial de retornos superiores al mercado tradicional'
+          ],
+          ctaLabel: 'Conocer más'
+        }
+      ],
+      ctaLabel: 'Contactar ahora'
+    },
+    {
+      id: 'herramientas',
+      icon: 'Compass',
+      headline: 'Kit Skandia',
+      title: 'Tus herramientas para avanzar hacia tus metas',
+      summaryStatement: 'Recursos exclusivos para potenciar tu estrategia financiera.',
+      cards: [
+        {
+          title: 'Maratón de inversiones',
+          description: 'Aprende estrategias avanzadas de los expertos.',
+          ctaLabel: 'Ver video',
+          icon: 'Play'
+        },
+        {
+          title: 'Informe del CEI',
+          description: 'Análisis detallado del panorama económico.',
+          ctaLabel: 'Ver informe',
+          icon: 'FileText'
+        },
+        {
+          title: 'Perspectivas de inversión',
+          description: 'Visión experta del mercado y tendencias.',
+          ctaLabel: 'Ver video',
+          icon: 'Play'
+        }
+      ]
+    }
+  ],
+  finalMessage: 'Este año diste pasos firmes hacia tu libertad financiera, tu próximo nivel está en diversificar con inteligencia.',
+  hashtag: '#LibérateconSkandia'
+};
