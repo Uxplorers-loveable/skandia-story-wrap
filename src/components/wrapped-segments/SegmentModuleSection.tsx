@@ -2,10 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { 
   TrendingUp, PiggyBank, Shield, Lightbulb, Compass, Star, 
   Play, FileText, Globe, Calendar, BookOpen, Calculator,
-  ArrowRight, ChevronDown
+  ArrowRight, DollarSign, Target, PieChart
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   TrendingUp,
@@ -19,7 +18,10 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Globe,
   Calendar,
   BookOpen,
-  Calculator
+  Calculator,
+  DollarSign,
+  Target,
+  PieChart
 };
 
 interface CardConfig {
@@ -31,6 +33,15 @@ interface CardConfig {
   icon?: string;
 }
 
+interface StatCardConfig {
+  label: string;
+  value: string;
+  suffix?: string;
+  description?: string;
+  icon?: string;
+  highlight?: boolean;
+}
+
 interface ModuleConfig {
   id: string;
   icon: string;
@@ -38,6 +49,7 @@ interface ModuleConfig {
   headline?: string;
   summaryStatement: string;
   cards?: CardConfig[];
+  statCards?: StatCardConfig[];
   closingMessage?: string;
   ctaLabel?: string;
 }
@@ -105,7 +117,45 @@ export const SegmentModuleSection = ({ modules }: SegmentModuleSectionProps) => 
                 </p>
               </div>
 
-              {/* Cards */}
+              {/* Stat Cards - Grid layout for numerical data */}
+              {module.statCards && module.statCards.length > 0 && (
+                <div className={`grid gap-4 mb-6 ${
+                  module.statCards.length === 3 ? 'md:grid-cols-3' : 
+                  module.statCards.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 
+                  'md:grid-cols-2'
+                }`}>
+                  {module.statCards.map((stat, statIndex) => {
+                    const StatIcon = stat.icon ? iconMap[stat.icon] : null;
+                    
+                    return (
+                      <div 
+                        key={statIndex}
+                        className={`${
+                          stat.highlight 
+                            ? `bg-gradient-to-br ${gradient} backdrop-blur-sm` 
+                            : 'bg-white/5 backdrop-blur-sm border-white/10'
+                        } rounded-2xl p-6 border transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)]`}
+                      >
+                        {StatIcon && (
+                          <div className={`p-3 ${stat.highlight ? 'bg-white/20' : 'bg-primary/20'} rounded-xl w-fit mb-4`}>
+                            <StatIcon className={`w-6 h-6 ${stat.highlight ? 'text-white' : 'text-primary'}`} />
+                          </div>
+                        )}
+                        <p className="text-3xl md:text-4xl font-bold text-white mb-1">
+                          {stat.value}
+                          {stat.suffix && <span className="text-lg md:text-xl text-white/70 ml-1">{stat.suffix}</span>}
+                        </p>
+                        <p className="text-sm text-white/60">{stat.label}</p>
+                        {stat.description && (
+                          <p className="text-xs text-white/50 mt-2">{stat.description}</p>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* Regular Cards */}
               {module.cards && module.cards.length > 0 && (
                 <div className="space-y-4">
                   {module.cards.map((card, cardIndex) => {

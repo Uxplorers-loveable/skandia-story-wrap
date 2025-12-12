@@ -13,6 +13,7 @@ export interface WBModuleConfig {
     suffix?: string;
   };
   cards?: CardConfig[];
+  statCards?: StatCardConfig[];
   details?: string[];
   insight?: string;
   closingMessage?: string;
@@ -26,6 +27,15 @@ export interface CardConfig {
   ctaLabel?: string;
   ctaUrl?: string;
   icon?: string;
+}
+
+export interface StatCardConfig {
+  label: string;
+  value: string;
+  suffix?: string;
+  description?: string;
+  icon?: string;
+  highlight?: boolean;
 }
 
 export interface WBSegmentConfig {
@@ -50,14 +60,27 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       headline: 'Tu 2025 en números',
       title: '¡Así construiste tu patrimonio!',
       summaryStatement: 'Tu constancia y estrategia marcaron la diferencia este año.',
-      cards: [
+      statCards: [
         {
-          title: 'Tu actividad en 2025',
-          bullets: [
-            'Meses en los que aportaste: x de 12',
-            'Comparativa 2024: Aportaste xx% más en el 2025',
-            'Aportes totales: $xx este 2025'
-          ]
+          label: 'Meses aportando',
+          value: '10',
+          suffix: 'de 12',
+          icon: 'Calendar',
+          highlight: true
+        },
+        {
+          label: 'Crecimiento vs 2024',
+          value: '+22',
+          suffix: '%',
+          icon: 'TrendingUp',
+          highlight: true
+        },
+        {
+          label: 'Aportes totales 2025',
+          value: '$48',
+          suffix: 'M',
+          icon: 'DollarSign',
+          highlight: false
         }
       ],
       closingMessage: '2026 viene con oportunidades para quienes crecen con estrategia, ¿te atreves a explorar tus posibilidades?'

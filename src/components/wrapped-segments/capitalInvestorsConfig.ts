@@ -13,6 +13,7 @@ export interface CIModuleConfig {
     suffix?: string;
   };
   cards?: CardConfig[];
+  statCards?: StatCardConfig[];
   details?: string[];
   insight?: string;
   closingMessage?: string;
@@ -26,6 +27,15 @@ export interface CardConfig {
   ctaLabel?: string;
   ctaUrl?: string;
   icon?: string;
+}
+
+export interface StatCardConfig {
+  label: string;
+  value: string;
+  suffix?: string;
+  description?: string;
+  icon?: string;
+  highlight?: boolean;
 }
 
 export interface CISegmentConfig {
@@ -50,14 +60,34 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       headline: 'Tu 2025 en números',
       title: 'Así optimizaste tu rendimiento durante el año',
       summaryStatement: 'Tu visión estratégica y disciplina generaron resultados excepcionales.',
-      cards: [
+      statCards: [
         {
-          title: 'Tu rendimiento 2025',
-          bullets: [
-            'Rentabilidad de tu portafolio: xx%',
-            'Crecimiento vs benchmark: +x puntos',
-            'Diversificación: x clases de activos'
-          ]
+          label: 'Rentabilidad portafolio',
+          value: '+18.5',
+          suffix: '%',
+          icon: 'TrendingUp',
+          highlight: true
+        },
+        {
+          label: 'vs Benchmark',
+          value: '+3.2',
+          suffix: 'pts',
+          icon: 'Target',
+          highlight: true
+        },
+        {
+          label: 'Clases de activos',
+          value: '5',
+          suffix: 'diversificados',
+          icon: 'PieChart',
+          highlight: false
+        },
+        {
+          label: 'Rendimientos generados',
+          value: '$14.8',
+          suffix: 'M',
+          icon: 'DollarSign',
+          highlight: false
         }
       ],
       closingMessage: '2026 puede ser el año para capitalizar nuevas oportunidades. Descubre las alternativas que ponemos a tu alcance.'
