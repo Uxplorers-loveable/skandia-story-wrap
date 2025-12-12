@@ -149,7 +149,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           icon: 'Globe'
         },
         {
-          title: 'Webinars de inversión',
+          title: 'Informe del CEI',
           description: 'Sesiones exclusivas con nuestros estrategas.',
           ctaLabel: 'Ver calendario',
           icon: 'Calendar'
