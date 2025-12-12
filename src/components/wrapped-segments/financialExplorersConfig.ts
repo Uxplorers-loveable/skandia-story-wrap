@@ -113,10 +113,9 @@ export const financialExplorersConfig: FESegmentConfig = {
           title: 'Universales',
           description: 'Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.',
           bullets: [
-            'Protección para ti y tu familia',
-            'Componente de ahorro incluido',
-            'Flexibilidad en aportes',
-            'Beneficios tributarios'
+            'Pagos por PSE, débito o descuento por nómina.',
+            'Inversiones en portafolios estables y conservadores.',
+            'Retiros sin costo.'
           ],
           ctaLabel: 'Conocer más'
         }
