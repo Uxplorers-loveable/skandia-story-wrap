@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 import { Sparkles, Rocket } from "lucide-react";
 import skandiaLogo from "@/assets/skandia-logo.webp";
-
 interface SegmentHeroSectionProps {
   clientName: string;
   greeting: string;
   headline: string;
   segmentLabel: string;
 }
-
-export const SegmentHeroSection = ({ clientName, greeting, headline, segmentLabel }: SegmentHeroSectionProps) => {
+export const SegmentHeroSection = ({
+  clientName,
+  greeting,
+  headline,
+  segmentLabel
+}: SegmentHeroSectionProps) => {
   const [visible, setVisible] = useState(false);
-  
   useEffect(() => {
     setVisible(true);
   }, []);
 
   // Personalizar el saludo con el nombre del cliente
   const personalizedGreeting = greeting.replace('xxx', clientName);
-
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)]">
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[hsl(220,20%,10%)] to-[hsl(220,25%,15%)]">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
@@ -30,13 +30,9 @@ export const SegmentHeroSection = ({ clientName, greeting, headline, segmentLabe
 
       <div className={`relative z-10 text-center px-6 max-w-4xl transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         {/* Skandia Logo */}
-        <img 
-          src={skandiaLogo} 
-          alt="Skandia" 
-          className="h-8 md:h-10 mx-auto mb-8 object-contain"
-        />
+        <img src={skandiaLogo} alt="Skandia" className="h-8 md:h-10 mx-auto mb-8 object-contain" />
         
-        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3 mb-8">
+        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-6 py-3 mb-8 rounded-sm">
           <Sparkles className="w-5 h-5 text-primary" />
           <span className="text-primary font-medium">Tu Wrapped 2025</span>
         </div>
@@ -63,6 +59,5 @@ export const SegmentHeroSection = ({ clientName, greeting, headline, segmentLabe
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
