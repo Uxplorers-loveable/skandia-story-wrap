@@ -72,7 +72,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           label: 'Ahorro pensional total',
           value: '48',
           suffix: 'M',
-          icon: 'TrendingUp',
+          icon: 'DollarSign',
           highlight: true
         },
         {
