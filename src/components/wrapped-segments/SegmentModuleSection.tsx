@@ -80,7 +80,7 @@ export const SegmentModuleSection = ({
         }}>
               {/* Module Header */}
               <div className="text-center mb-8">
-                {module.headline && <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-4">
+                {module.headline && <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-4 py-2 mb-4 rounded-sm">
                     <Icon className="w-4 h-4 text-primary" />
                     <span className="text-primary text-sm font-medium">{module.headline}</span>
                   </div>}
