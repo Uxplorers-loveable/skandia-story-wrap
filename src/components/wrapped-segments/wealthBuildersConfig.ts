@@ -96,9 +96,10 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           title: 'Fondos Alternativos',
           description: 'Son inversiones que complementan tu portafolio con activos como Bitcoin o fondos de impacto, los cuales te permiten diversificar y captar nuevas fuentes de crecimiento.',
           bullets: [
-            'Acceso a mercados privados y activos reales',
-            'Gestión profesional de inversiones sofisticadas',
-            'Potencial de retornos superiores al mercado tradicional'
+            'Amplían tus fuentes de rentabilidad.',
+            'Reducen la dependencia de mercados tradicionales.',
+            'Brindan acceso a tendencias globales y nuevas economías.',
+            'Complementan tu estrategia con activos innovadores.'
           ],
           ctaLabel: 'Conocer más'
         }
