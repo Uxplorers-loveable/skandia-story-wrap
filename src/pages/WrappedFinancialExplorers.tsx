@@ -11,7 +11,7 @@ const WrappedFinancialExplorers = () => {
       {/* Final Message */}
       <section className="bg-gradient-to-b from-[hsl(220,20%,12%)] to-[hsl(220,20%,8%)] px-6 py-20">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-primary via-accent to-secondary p-1 rounded-3xl text-primary border-primary">
+          <div className="bg-primary p-1 rounded-3xl">
             <div className="bg-[hsl(220,20%,10%)] rounded-3xl p-12 text-center">
               <p className="text-2xl md:text-3xl text-white font-light leading-relaxed mb-4">
                 {config.finalMessage}
