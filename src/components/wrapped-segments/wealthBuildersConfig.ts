@@ -94,7 +94,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       cards: [
         {
           title: 'Fondos Alternativos',
-          description: 'Diversifica tu portafolio con activos no tradicionales que buscan mayor rentabilidad.',
+          description: 'Son inversiones que complementan tu portafolio con activos como Bitcoin o fondos de impacto, los cuales te permiten diversificar y captar nuevas fuentes de crecimiento.',
           bullets: [
             'Acceso a mercados privados y activos reales',
             'Gestión profesional de inversiones sofisticadas',
