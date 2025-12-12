@@ -30,7 +30,7 @@ export const SegmentHeroSection = ({ clientName, greeting, headline, segmentLabe
       <div className={`relative z-10 text-center px-6 max-w-4xl transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3 mb-8">
           <Sparkles className="w-5 h-5 text-primary" />
-          <span className="text-primary font-medium">Skandia Wrapped 2025 • {segmentLabel}</span>
+          <span className="text-primary font-medium">Skandia Wrapped 2025</span>
         </div>
         
         <p className="text-xl md:text-2xl text-white/80 mb-6 font-light">
