@@ -103,10 +103,9 @@ export const financialExplorersConfig: FESegmentConfig = {
           title: 'Invest-ed',
           description: 'Una herramienta de diversificación e inversión, probando diferentes activos.',
           bullets: [
-            'Aprende mientras inviertes',
-            'Montos accesibles para comenzar',
-            'Acompañamiento paso a paso',
-            'Contenido educativo incluido'
+            '100% digital.',
+            'Libertad de invertir cualquier monto.',
+            'Solución tecnológica que facilita la estrategia de inversión.'
           ],
           ctaLabel: 'Conocer más'
         },
