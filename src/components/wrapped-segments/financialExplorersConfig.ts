@@ -86,7 +86,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           label: 'Saldo cesantías',
           value: '$8.5',
           suffix: 'M',
-          icon: 'PiggyBank',
+          icon: 'DollarSign',
           highlight: false
         }
       ],
