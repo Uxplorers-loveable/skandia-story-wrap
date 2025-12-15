@@ -133,7 +133,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           description: "Aprende a organizar tu plan financiero desde cero.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/mesa-redonda",
-          icon: "Play",
+          icon: "BookOpen",
         },
         {
           title: "Perspectivas de inversión",
