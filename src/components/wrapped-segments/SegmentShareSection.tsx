@@ -5,12 +5,14 @@ interface SegmentShareSectionProps {
   finalMessage: string;
   hashtag: string;
   customDisclaimer?: string;
+  footerImage?: string;
 }
 export const SegmentShareSection = ({
   clientName,
   finalMessage,
   hashtag,
-  customDisclaimer
+  customDisclaimer,
+  footerImage
 }: SegmentShareSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -58,10 +60,16 @@ export const SegmentShareSection = ({
             </p>
           </div>
 
-          {/* Footer */}
-          <div className="text-center mt-8">
-            
-          </div>
+          {/* Footer Image */}
+          {footerImage && (
+            <div className="mt-12 flex justify-center">
+              <img 
+                src={footerImage} 
+                alt="Footer" 
+                className="max-w-full h-auto"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>;
