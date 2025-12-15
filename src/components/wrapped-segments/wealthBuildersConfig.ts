@@ -113,7 +113,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       summaryStatement: 'Recursos exclusivos para potenciar tu estrategia financiera.',
       cards: [
         {
-          title: 'Maratón de inversiones',
+          title: 'Inversiones 2.0',
           description: 'Aprende estrategias avanzadas de los expertos.',
           ctaLabel: 'Ver curso',
           ctaUrl: 'https://channel.skandia.com.co/course/mesa-redonda',
