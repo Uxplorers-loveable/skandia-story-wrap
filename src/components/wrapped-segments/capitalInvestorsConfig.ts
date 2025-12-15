@@ -155,6 +155,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Perspectivas de inversión',
           description: 'Visión experta del mercado y tendencias.',
           ctaLabel: 'Ver curso',
+          ctaUrl: 'https://youtu.be/ZTbDFmpB9Bs',
           icon: 'Play'
         }
       ]
