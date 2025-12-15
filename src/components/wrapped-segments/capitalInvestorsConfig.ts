@@ -14,6 +14,7 @@ export interface CIModuleConfig {
   };
   cards?: CardConfig[];
   statCards?: StatCardConfig[];
+  statCardsDisclaimer?: string;
   details?: string[];
   insight?: string;
   closingMessage?: string;
@@ -83,6 +84,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           highlight: false,
         },
       ],
+      statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
         "2026 puede ser el año para capitalizar nuevas oportunidades. Descubre las alternativas que ponemos a tu alcance.",
     },
