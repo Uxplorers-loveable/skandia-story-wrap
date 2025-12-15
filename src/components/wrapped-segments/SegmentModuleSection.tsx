@@ -219,7 +219,7 @@ export const SegmentModuleSection = ({ modules }: SegmentModuleSectionProps) => 
                             )}
                             {card.ctaLabel &&
                               (card.ctaUrl ? (
-                                <a href= target="_blank" rel="noopener noreferrer">
+                                <a href={card.ctaUrl} target="_blank" rel="noopener noreferrer">
                                   <Button
                                     variant="outline"
                                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
