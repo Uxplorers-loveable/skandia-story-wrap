@@ -49,8 +49,15 @@ export const SegmentShareSection = ({
             
           </div>
 
+          {/* Legal Disclaimer */}
+          <div className="mt-12 px-4">
+            <p className="text-muted-foreground text-xs leading-relaxed text-center">
+              El contenido de la presente comunicación no constituye una recomendación profesional para realizar inversiones, en los términos del artículo 2.40.1.1.2 del Decreto 2555 de 2010. La Publicación no constituye recomendación, sugerencia, consejo ni asesoría alguna para la toma de decisiones. Skandia no promete ni garantiza el capital ni la obtención de rentabilidad, las obligaciones de Skandia son de medio y no de resultado.
+            </p>
+          </div>
+
           {/* Footer */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <p className="text-muted-foreground text-sm">
               Skandia Wrapped 2025
             </p>
