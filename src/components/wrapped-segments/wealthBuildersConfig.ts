@@ -116,6 +116,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           title: 'Maratón de inversiones',
           description: 'Aprende estrategias avanzadas de los expertos.',
           ctaLabel: 'Ver video',
+          ctaUrl: 'https://youtu.be/ZTbDFmpB9Bs',
           icon: 'Play'
         },
         {
