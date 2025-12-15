@@ -141,7 +141,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         {
           title: 'Análisis de mercados globales',
           description: 'Perspectiva experta de los principales mercados.',
-          ctaLabel: 'Ver curso',
+          ctaLabel: 'Ver video',
           ctaUrl: 'https://channel.skandia.com.co/course/inversiones-internacionales',
           icon: 'BookOpen'
         },
