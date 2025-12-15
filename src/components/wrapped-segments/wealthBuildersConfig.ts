@@ -83,6 +83,13 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           icon: "DollarSign",
           highlight: false,
         },
+        {
+          label: "Valor total asegurado",
+          value: "$250",
+          suffix: "M",
+          icon: "Shield",
+          highlight: false,
+        },
       ],
       statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
