@@ -149,6 +149,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: 'Informe del CEI',
           description: 'Análisis detallado del panorama económico.',
           ctaLabel: 'Ver informe',
+          ctaUrl: 'https://www.skandia.co/documents/39464/2061583/Informe+Econ%C3%B3mico+Semanal+-+08+al+12+de+Diciembre+de+2025.pdf/60b53799-df89-95d9-d5cd-7ab63afe4056?t=1765583894746',
           icon: 'FileText'
         },
         {
