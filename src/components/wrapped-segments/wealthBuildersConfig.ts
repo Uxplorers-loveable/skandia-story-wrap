@@ -131,7 +131,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
         {
           title: "Perspectivas de inversión",
           description: "Visión experta del mercado y tendencias.",
-          ctaLabel: "Ver video",
+          ctaLabel: "Ver curso",
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
         },
