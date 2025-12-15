@@ -125,13 +125,14 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           title: "Informe del CEI",
           description: "Análisis detallado del panorama económico.",
           ctaLabel: "Ver informe",
-          ctaUrl: "https://www.skandia.co/documents/39464/3278030/Informe+diario+-+10+de+Diciembre+de+2025.pdf/69e6d465-5980-de88-0d95-051cc0a7d664?t=1765403386383",
+          ctaUrl:
+            "https://www.skandia.co/documents/39464/3278030/Informe+diario+-+10+de+Diciembre+de+2025.pdf/69e6d465-5980-de88-0d95-051cc0a7d664?t=1765403386383",
           icon: "FileText",
         },
         {
           title: "Perspectivas de inversión",
           description: "Visión experta del mercado y tendencias.",
-          ctaLabel: "Ver curso",
+          ctaLabel: "Ver video",
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
         },

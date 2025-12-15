@@ -49,119 +49,123 @@ export interface CISegmentConfig {
 }
 
 export const capitalInvestorsConfig: CISegmentConfig = {
-  id: 'capital-investors',
-  clientName: 'xxx',
-  welcomeGreeting: 'Hola xxx, tus finanzas cambiaron durante el 2025.',
-  welcomeHeadline: 'Es momento de explorar tu futuro financiero este 2026.',
+  id: "capital-investors",
+  clientName: "xxx",
+  welcomeGreeting: "Hola xxx, tus finanzas cambiaron durante el 2025.",
+  welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
-      id: 'resumen-2025',
-      icon: 'TrendingUp',
-      headline: 'Tu 2025 en números',
-      title: 'Así optimizaste tu rendimiento durante el año',
-      summaryStatement: 'Tu visión estratégica y disciplina generaron resultados excepcionales.',
+      id: "resumen-2025",
+      icon: "TrendingUp",
+      headline: "Tu 2025 en números",
+      title: "Así optimizaste tu rendimiento durante el año",
+      summaryStatement: "Tu visión estratégica y disciplina generaron resultados excepcionales.",
       statCards: [
         {
-          label: 'Meses aportando',
-          value: '10',
-          suffix: 'de 12',
-          icon: 'Calendar',
-          highlight: true
+          label: "Meses aportando",
+          value: "10",
+          suffix: "de 12",
+          icon: "Calendar",
+          highlight: true,
         },
         {
-          label: 'Crecimiento vs 2024',
-          value: '+22',
-          suffix: '%',
-          icon: 'TrendingUp',
-          highlight: true
+          label: "Crecimiento vs 2024",
+          value: "+22",
+          suffix: "%",
+          icon: "TrendingUp",
+          highlight: true,
         },
         {
-          label: 'Aportes totales 2025',
-          value: '$48',
-          suffix: 'M',
-          icon: 'DollarSign',
-          highlight: false
-        }
+          label: "Aportes totales 2025",
+          value: "$48",
+          suffix: "M",
+          icon: "DollarSign",
+          highlight: false,
+        },
       ],
-      closingMessage: '2026 puede ser el año para capitalizar nuevas oportunidades. Descubre las alternativas que ponemos a tu alcance.'
+      closingMessage:
+        "2026 puede ser el año para capitalizar nuevas oportunidades. Descubre las alternativas que ponemos a tu alcance.",
     },
     {
-      id: 'oportunidades-2026',
-      icon: 'Lightbulb',
-      headline: 'Tus oportunidades 2026',
-      title: '¡Proyéctate hacia lo global!',
-      summaryStatement: 'Soluciones sofisticadas diseñadas para inversionistas como tú.',
+      id: "oportunidades-2026",
+      icon: "Lightbulb",
+      headline: "Tus oportunidades 2026",
+      title: "¡Proyéctate hacia lo global!",
+      summaryStatement: "Soluciones sofisticadas diseñadas para inversionistas como tú.",
       cards: [
         {
-          title: 'Estrategias sofisticadas de inversión',
-          description: 'Combinan diversificación global, análisis cuantitativo y estrategias de retorno absoluto.',
+          title: "Estrategias sofisticadas de inversión",
+          description: "Combinan diversificación global, análisis cuantitativo y estrategias de retorno absoluto.",
           bullets: [
-            'Estrategias globales.',
-            'Diversificación más allá de los mercados tradicionales.',
-            'Mayor potencial de rendimiento ajustado al riesgo.'
-          ]
+            "Estrategias globales.",
+            "Diversificación más allá de los mercados tradicionales.",
+            "Mayor potencial de rendimiento ajustado al riesgo.",
+          ],
         },
         {
-          title: 'Fondos Alternativos',
-          description: 'Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.',
+          title: "Fondos Alternativos",
+          description:
+            "Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.",
           bullets: [
-            'Posibilidades de aumentar la rentabilidad.',
-            'Reducen la dependencia de los mercados tradicionales.',
-            'Conectan con nuevas tendencias y economías emergentes.'
-          ]
+            "Posibilidades de aumentar la rentabilidad.",
+            "Reducen la dependencia de los mercados tradicionales.",
+            "Conectan con nuevas tendencias y economías emergentes.",
+          ],
         },
         {
-          title: 'Inversiones en dólares (Offshore)',
-          description: 'Diversifica tu portafolio, invirtiendo en dólares en Estados Unidos.',
+          title: "Inversiones en dólares (Offshore)",
+          description: "Diversifica tu portafolio, invirtiendo en dólares en Estados Unidos.",
           bullets: [
-            '100% digital y rápido.',
-            'Asesoría y planificación en dólares.',
-            'Inversión con libertad, liquidez y eficiencia fiscal.'
-          ]
+            "100% digital y rápido.",
+            "Asesoría y planificación en dólares.",
+            "Inversión con libertad, liquidez y eficiencia fiscal.",
+          ],
         },
         {
-          title: 'Crea Patrimonio',
-          description: 'Seguro individual de pensiones para ahorrar una reserva a largo plazo.',
+          title: "Crea Patrimonio",
+          description: "Seguro individual de pensiones para ahorrar una reserva a largo plazo.",
           bullets: [
-            'Flexibilidad para determinar beneficiarios y sobrevivientes.',
-            'Beneficio tributario según lo establecido por ley.',
-            'Suma asegurada alcanzada en caso de muerte o incapacidad total y permanente.'
-          ]
-        }
+            "Flexibilidad para determinar beneficiarios y sobrevivientes.",
+            "Beneficio tributario según lo establecido por ley.",
+            "Suma asegurada alcanzada en caso de muerte o incapacidad total y permanente.",
+          ],
+        },
       ],
-      ctaLabel: 'Contactar ahora'
+      ctaLabel: "Contactar ahora",
     },
     {
-      id: 'herramientas',
-      icon: 'Compass',
-      headline: 'Centro de herramientas',
-      title: 'Recursos que te guían, informan y ayudan a invertir con más claridad',
-      summaryStatement: 'Información exclusiva para tomar decisiones más informadas.',
+      id: "herramientas",
+      icon: "Compass",
+      headline: "Centro de herramientas",
+      title: "Recursos que te guían, informan y ayudan a invertir con más claridad",
+      summaryStatement: "Información exclusiva para tomar decisiones más informadas.",
       cards: [
         {
-          title: 'Análisis de mercados globales',
-          description: 'Perspectiva experta de los principales mercados.',
-          ctaLabel: 'Ver video',
-          ctaUrl: 'https://channel.skandia.com.co/course/inversiones-internacionales',
-          icon: 'BookOpen'
+          title: "Análisis de mercados globales",
+          description: "Perspectiva experta de los principales mercados.",
+          ctaLabel: "Ver video",
+          ctaUrl: "https://channel.skandia.com.co/course/inversiones-internacionales",
+          icon: "BookOpen",
         },
         {
-          title: 'Informe del CEI',
-          description: 'Análisis detallado del panorama económico.',
-          ctaLabel: 'Ver informe',
-          ctaUrl: 'https://www.skandia.co/documents/39464/2061583/Informe+Econ%C3%B3mico+Semanal+-+08+al+12+de+Diciembre+de+2025.pdf/60b53799-df89-95d9-d5cd-7ab63afe4056?t=1765583894746',
-          icon: 'FileText'
+          title: "Informe del CEI",
+          description: "Análisis detallado del panorama económico.",
+          ctaLabel: "Ver informe",
+          ctaUrl:
+            "https://www.skandia.co/documents/39464/2061583/Informe+Econ%C3%B3mico+Semanal+-+08+al+12+de+Diciembre+de+2025.pdf/60b53799-df89-95d9-d5cd-7ab63afe4056?t=1765583894746",
+          icon: "FileText",
         },
         {
-          title: 'Perspectivas de inversión',
-          description: 'Visión experta del mercado y tendencias.',
-          ctaLabel: 'Ver curso',
-          ctaUrl: 'https://youtu.be/ZTbDFmpB9Bs',
-          icon: 'Play'
-        }
-      ]
-    }
+          title: "Perspectivas de inversión",
+          description: "Visión experta del mercado y tendencias.",
+          ctaLabel: "Ver video",
+          ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
+          icon: "Play",
+        },
+      ],
+    },
   ],
-  finalMessage: 'Este año fortaleciste tu estrategia, el próximo trae un escenario global que abre nuevas y mejores oportunidades.',
-  hashtag: '#LibérateconSkandia'
+  finalMessage:
+    "Este año fortaleciste tu estrategia, el próximo trae un escenario global que abre nuevas y mejores oportunidades.",
+  hashtag: "#LibérateconSkandia",
 };

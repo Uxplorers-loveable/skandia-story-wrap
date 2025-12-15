@@ -49,100 +49,102 @@ export interface FESegmentConfig {
 }
 
 export const financialExplorersConfig: FESegmentConfig = {
-  id: 'financial-explorers',
-  clientName: 'xxx',
-  welcomeGreeting: 'Hola xxx, tus finanzas cambiaron durante el 2025.',
-  welcomeHeadline: 'Es momento de explorar tu futuro financiero este 2026.',
+  id: "financial-explorers",
+  clientName: "xxx",
+  welcomeGreeting: "Hola xxx, tus finanzas cambiaron durante el 2025.",
+  welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
-      id: 'resumen-2025',
-      icon: 'TrendingUp',
-      headline: 'Tu 2025 en números',
-      title: 'Así va la construcción de tus finanzas',
-      summaryStatement: 'Cada paso que diste este año te acerca a un futuro más seguro.',
+      id: "resumen-2025",
+      icon: "TrendingUp",
+      headline: "Tu 2025 en números",
+      title: "Así va la construcción de tus finanzas",
+      summaryStatement: "Cada paso que diste este año te acerca a un futuro más seguro.",
       statCards: [
         {
-          label: 'Cotizadas en 2025',
-          value: '48',
-          suffix: 'semanas',
-          icon: 'Calendar',
-          highlight: true
+          label: "Cotizadas en 2025",
+          value: "48",
+          suffix: "semanas",
+          icon: "Calendar",
+          highlight: true,
         },
         {
-          label: 'Ahorro pensional total',
-          value: '48',
-          suffix: 'M',
-          icon: 'DollarSign',
-          highlight: true
+          label: "Ahorro pensional total",
+          value: "48",
+          suffix: "M",
+          icon: "DollarSign",
+          highlight: true,
         },
         {
-          label: 'Para recibir tu pensión',
-          value: '18',
-          suffix: 'años',
-          icon: 'Calendar',
-          highlight: false
+          label: "Para recibir tu pensión",
+          value: "18",
+          suffix: "años",
+          icon: "Calendar",
+          highlight: false,
         },
         {
-          label: 'Saldo cesantías',
-          value: '$8.5',
-          suffix: 'M',
-          icon: 'DollarSign',
-          highlight: false
-        }
+          label: "Saldo cesantías",
+          value: "$8.5",
+          suffix: "M",
+          icon: "DollarSign",
+          highlight: false,
+        },
       ],
-      closingMessage: 'Los pasos que das hoy, transformarán tu mañana. ¡Descubre cómo fortalecer tu futuro para el 2026!'
+      closingMessage:
+        "Los pasos que das hoy, transformarán tu mañana. ¡Descubre cómo fortalecer tu futuro para el 2026!",
     },
     {
-      id: 'oportunidades-2026',
-      icon: 'Lightbulb',
-      headline: 'Tus oportunidades 2026',
-      title: 'Construye bienestar a futuro con estas opciones',
-      summaryStatement: 'Alternativas sencillas y accesibles para dar tus primeros pasos.',
+      id: "oportunidades-2026",
+      icon: "Lightbulb",
+      headline: "Tus oportunidades 2026",
+      title: "Construye bienestar a futuro con estas opciones",
+      summaryStatement: "Alternativas sencillas y accesibles para dar tus primeros pasos.",
       cards: [
         {
-          title: 'Invest-ed',
-          description: 'Una herramienta de diversificación e inversión, probando diferentes activos.',
+          title: "Invest-ed",
+          description: "Una herramienta de diversificación e inversión, probando diferentes activos.",
           bullets: [
-            '100% digital.',
-            'Libertad de invertir cualquier monto.',
-            'Solución tecnológica que facilita la estrategia de inversión.'
-          ]
+            "100% digital.",
+            "Libertad de invertir cualquier monto.",
+            "Solución tecnológica que facilita la estrategia de inversión.",
+          ],
         },
         {
-          title: 'Universales',
-          description: 'Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.',
+          title: "Universales",
+          description: "Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.",
           bullets: [
-            'Pagos por PSE, débito o descuento por nómina.',
-            'Inversiones en portafolios estables y conservadores.',
-            'Retiros sin costo.'
-          ]
-        }
+            "Pagos por PSE, débito o descuento por nómina.",
+            "Inversiones en portafolios estables y conservadores.",
+            "Retiros sin costo.",
+          ],
+        },
       ],
-      ctaLabel: 'Contactar ahora'
+      ctaLabel: "Contactar ahora",
     },
     {
-      id: 'herramientas',
-      icon: 'Compass',
-      headline: 'Centro de herramientas',
-      title: 'Recursos que te ayudan a mejorar tu futuro financiero',
-      summaryStatement: 'Contenido pensado para quienes están comenzando su camino.',
+      id: "herramientas",
+      icon: "Compass",
+      headline: "Centro de herramientas",
+      title: "Recursos que te ayudan a mejorar tu futuro financiero",
+      summaryStatement: "Contenido pensado para quienes están comenzando su camino.",
       cards: [
         {
-          title: 'Back to Skool',
-          description: 'Aprende a organizar tu plan financiero desde cero.',
-          ctaLabel: 'Ver curso',
-          ctaUrl: 'https://channel.skandia.com.co/course/back-to-skool-1',
-          icon: 'Play'
+          title: "Back to Skool",
+          description: "Aprende a organizar tu plan financiero desde cero.",
+          ctaLabel: "Ver curso",
+          ctaUrl: "https://channel.skandia.com.co/course/back-to-skool-1",
+          icon: "Play",
         },
         {
-          title: 'Perspectivas de inversión',
-          description: 'Aprende finanzas personales de forma sencilla.',
-          ctaLabel: 'Ver cursos',
-          icon: 'Play'
-        }
-      ]
-    }
+          title: "Perspectivas de inversión",
+          description: "Aprende finanzas personales de forma sencilla.",
+          ctaLabel: "Ver video",
+          icon: "Play",
+        },
+      ],
+    },
   ],
-  finalMessage: 'Cada avance te acerca a un futuro más estable, que el próximo año sea clave para asegurar tu bienestar a largo plazo.',
-  hashtag: '#LibérateconSkandia'
+  finalMessage:
+    "Cada avance te acerca a un futuro más estable, que el próximo año sea clave para asegurar tu bienestar a largo plazo.",
+  hashtag: "#LibérateconSkandia",
 };
