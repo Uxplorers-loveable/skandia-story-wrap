@@ -130,14 +130,14 @@ export const financialExplorersConfig: FESegmentConfig = {
         {
           title: 'Back to Skool',
           description: 'Aprende a organizar tu plan financiero desde cero.',
-          ctaLabel: 'Ver video',
+          ctaLabel: 'Ver curso',
           ctaUrl: 'https://channel.skandia.com.co/course/back-to-skool-1',
           icon: 'Play'
         },
         {
           title: 'Perspectivas de inversión',
           description: 'Aprende finanzas personales de forma sencilla.',
-          ctaLabel: 'Ver videos',
+          ctaLabel: 'Ver cursos',
           icon: 'Play'
         }
       ]
