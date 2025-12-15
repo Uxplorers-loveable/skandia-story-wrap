@@ -129,10 +129,10 @@ export const financialExplorersConfig: FESegmentConfig = {
       summaryStatement: "Contenido pensado para quienes están comenzando su camino.",
       cards: [
         {
-          title: "Back to Skool",
+          title: "Diseñar Riqueza",
           description: "Aprende a organizar tu plan financiero desde cero.",
           ctaLabel: "Ver curso",
-          ctaUrl: "https://channel.skandia.com.co/course/back-to-skool-1",
+          ctaUrl: "https://channel.skandia.com.co/course/mesa-redonda",
           icon: "Play",
         },
         {
