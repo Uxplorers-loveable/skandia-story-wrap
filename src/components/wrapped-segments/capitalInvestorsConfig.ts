@@ -141,7 +141,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         {
           title: 'Análisis de mercados globales',
           description: 'Perspectiva experta de los principales mercados.',
-          ctaLabel: 'Ver video',
+          ctaLabel: 'Ver curso',
           icon: 'Play'
         },
         {
@@ -153,7 +153,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         {
           title: 'Perspectivas de inversión',
           description: 'Visión experta del mercado y tendencias.',
-          ctaLabel: 'Ver video',
+          ctaLabel: 'Ver curso',
           icon: 'Play'
         }
       ]
