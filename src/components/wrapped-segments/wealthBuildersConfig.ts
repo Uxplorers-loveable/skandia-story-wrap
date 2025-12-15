@@ -119,7 +119,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           description: "Aprende estrategias avanzadas de los expertos.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/tu-clase-sobre-renta-fija-vs-renta-variable",
-          icon: "Play",
+          icon: "BookOpen",
         },
         {
           title: "Informe del CEI",
