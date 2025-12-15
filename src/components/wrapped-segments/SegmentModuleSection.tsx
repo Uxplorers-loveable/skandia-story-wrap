@@ -66,6 +66,7 @@ interface ModuleConfig {
   summaryStatement: string;
   cards?: CardConfig[];
   statCards?: StatCardConfig[];
+  statCardsDisclaimer?: string;
   closingMessage?: string;
   ctaLabel?: string;
 }
@@ -183,6 +184,13 @@ export const SegmentModuleSection = ({ modules }: SegmentModuleSectionProps) => 
                     );
                   })}
                 </div>
+              )}
+
+              {/* Stat Cards Disclaimer */}
+              {module.statCardsDisclaimer && (
+                <p className="text-xs text-muted-foreground text-center mb-8 -mt-4">
+                  {module.statCardsDisclaimer}
+                </p>
               )}
 
               {/* Regular Cards */}

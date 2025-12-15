@@ -14,6 +14,7 @@ export interface WBModuleConfig {
   };
   cards?: CardConfig[];
   statCards?: StatCardConfig[];
+  statCardsDisclaimer?: string;
   details?: string[];
   insight?: string;
   closingMessage?: string;
@@ -83,6 +84,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           highlight: false,
         },
       ],
+      statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
         "2026 viene con oportunidades para quienes crecen con estrategia, ¿te atreves a explorar tus posibilidades?",
     },
