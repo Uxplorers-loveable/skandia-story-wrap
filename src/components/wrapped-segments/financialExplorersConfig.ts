@@ -59,7 +59,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       id: "resumen-2025",
       icon: "TrendingUp",
       headline: "Tu 2025 en números",
-      title: "Así va la construcción de tus finanzas",
+      title: "Estos son los números que te definen como Financial Explorer.",
       summaryStatement: "Cada paso que diste este año te acerca a un futuro más seguro.",
       statCards: [
         {
