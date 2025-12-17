@@ -155,7 +155,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           icon: "BookOpen",
         },
         {
-          title: "Informe del CEI",
+          title: "Skandia #SinFiltro Report",
           description: "Análisis detallado del panorama económico.",
           ctaLabel: "Ver informe",
           ctaUrl:
