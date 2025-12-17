@@ -93,7 +93,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       ],
       statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
-        "Los pasos que das hoy, transformarán tu mañana. ¡Descubre cómo fortalecer tu futuro para el 2026!",
+        "Lo más difícil ya lo hiciste: empezar. ¡Es momento de subir de nivel en el 2026!",
     },
     {
       id: "oportunidades-2026",
