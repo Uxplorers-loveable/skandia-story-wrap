@@ -174,7 +174,7 @@ export const SegmentModuleSection = ({
                     </div>
                     <div className="flex-1 text-center md:text-left">
                       <p className="text-lg md:text-xl font-semibold text-foreground">Habla con tu Financial Planner</p>
-                      <p className="text-muted-foreground">Te ayudará a entender en dónde están las oportunidades que pueden potenciar tu nivel.</p>
+                      <p className="text-muted-foreground">Te ayudará a definir qué será clave para tus inversiones en el 2026.</p>
                     </div>
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 shadow-lg transition-all shrink-0 rounded-full">
                       {module.ctaLabel}
