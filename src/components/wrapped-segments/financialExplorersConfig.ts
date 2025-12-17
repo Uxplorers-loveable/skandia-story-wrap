@@ -118,7 +118,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           bullets: [
             "Elige la opción que se adapta a ti y simula tu inversión.",
             "Puedes hacer tus aportes por PSE, débito o descuento por nómina.",
-            "Retiros sin costo.",
+            "Tu dinero estará invertido en portafolios estables y conservadores.",
           ],
         },
       ],
