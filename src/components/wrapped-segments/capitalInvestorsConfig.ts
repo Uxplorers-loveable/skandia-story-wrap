@@ -134,6 +134,8 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             "Beneficio tributario según lo establecido por ley.",
             "Suma asegurada alcanzada en caso de muerte o incapacidad total y permanente.",
           ],
+          ctaLabel: "Ver más",
+          ctaUrl: "https://www.skandia.co/seguros-de-vida/seguro-de-pensiones-crea-patrimonio",
         },
       ],
       ctaLabel: "Contactar ahora",
