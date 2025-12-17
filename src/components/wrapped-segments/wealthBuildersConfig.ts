@@ -122,7 +122,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       id: "herramientas",
       icon: "Compass",
       headline: "Tu Centro de Herramientas",
-      title: "Tus herramientas para avanzar hacia tus metas",
+      title: "Todo lo que necesitas para potenciar tu estrategia financiera",
       summaryStatement: "Recursos exclusivos para potenciar tu estrategia financiera.",
       cards: [
         {
