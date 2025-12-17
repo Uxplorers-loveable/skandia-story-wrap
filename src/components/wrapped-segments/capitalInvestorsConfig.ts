@@ -105,7 +105,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       summaryStatement: "Soluciones sofisticadas diseñadas para inversionistas como tú.",
       cards: [
         {
-          title: "El poder de los Alternativos.",
+          title: "El poder de los Alternativos",
           description:
             "Incorporan activos que van más allá de la renta fija y las acciones tradicionales para diversificar tu portafolio y abrir nuevas fuentes de crecimiento.",
           bullets: [
