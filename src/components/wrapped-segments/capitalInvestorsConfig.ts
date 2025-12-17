@@ -123,6 +123,8 @@ export const capitalInvestorsConfig: CISegmentConfig = {
             "Protección ante la devaluación local.",
             "Oportunidad de invertir en sectores con alto potencial de crecimiento.",
           ],
+          ctaLabel: "Ver más",
+          ctaUrl: "https://www.skandia.co/invierte-en-usd",
         },
         {
           title: "El valor de estar seguro",
