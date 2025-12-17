@@ -113,7 +113,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           ],
         },
         {
-          title: "Universales",
+          title: "Los Universales",
           description: "Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.",
           bullets: [
             "Pagos por PSE, débito o descuento por nómina.",
