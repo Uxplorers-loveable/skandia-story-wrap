@@ -103,15 +103,6 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       summaryStatement: "Soluciones sofisticadas diseñadas para inversionistas como tú.",
       cards: [
         {
-          title: "Estrategias sofisticadas de inversión",
-          description: "Combinan diversificación global, análisis cuantitativo y estrategias de retorno absoluto.",
-          bullets: [
-            "Estrategias globales.",
-            "Diversificación más allá de los mercados tradicionales.",
-            "Mayor potencial de rendimiento ajustado al riesgo.",
-          ],
-        },
-        {
           title: "Fondos Alternativos",
           description:
             "Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.",
