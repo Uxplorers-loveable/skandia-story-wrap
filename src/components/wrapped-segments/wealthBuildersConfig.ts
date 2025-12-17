@@ -58,7 +58,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
     {
       id: "resumen-2025",
       icon: "TrendingUp",
-      headline: "Tu 2025 en números",
+      headline: "Tu IQ Financiero 2025 es 70/100 – Nivel: Wealth Builder",
       title: "¡Así construiste tu patrimonio!",
       summaryStatement: "Tu constancia y estrategia marcaron la diferencia este año.",
       statCards: [
