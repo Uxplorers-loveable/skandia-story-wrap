@@ -71,7 +71,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
         },
         {
           label: "Saldo total en MFUND",
-          value: "100",
+          value: "$100",
           suffix: "M",
           icon: "TrendingUp",
           highlight: true,
