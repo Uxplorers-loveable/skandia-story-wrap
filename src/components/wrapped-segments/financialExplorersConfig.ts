@@ -104,7 +104,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       cards: [
         {
           title: "Invest-ed",
-          description: "Una herramienta de diversificación e inversión, probando diferentes activos.",
+          description: "Una Herramienta de inversión:",
           bullets: [
             "100% digital de Skandia.",
             "Alineada con tus objetivos y metas de inversión.",
