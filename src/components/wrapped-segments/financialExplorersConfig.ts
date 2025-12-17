@@ -52,7 +52,7 @@ export interface FESegmentConfig {
 export const financialExplorersConfig: FESegmentConfig = {
   id: "financial-explorers",
   clientName: "xxx",
-  welcomeGreeting: "Hola xxx, tus finanzas cambiaron durante el 2025.",
+  welcomeGreeting: "Hola xxx, eres un Financial Explorer: ya dejaste atrás el \"algún día\" y diste tu primer paso para ocuparte de tu futuro,",
   welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
