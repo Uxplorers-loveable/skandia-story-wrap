@@ -174,7 +174,7 @@ export const SegmentModuleSection = ({
                     </div>
                     <div className="flex-1 text-center md:text-left">
                       <p className="text-lg md:text-xl font-semibold text-foreground">Pide asesoría</p>
-                      <p className="text-muted-foreground">Te ayudará a definir qué será clave para tus inversiones en el 2026.</p>
+                      <p className="text-muted-foreground">Entenderás cómo estás hoy y cuál sería el siguiente paso para avanzar al siguiente nivel.</p>
                     </div>
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 shadow-lg transition-all shrink-0 rounded-full">
                       {module.ctaLabel}
