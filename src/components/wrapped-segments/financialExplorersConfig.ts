@@ -144,7 +144,7 @@ export const financialExplorersConfig: FESegmentConfig = {
         },
         {
           title: "Perspectivas de inversión",
-          description: "Aprende finanzas personales de forma sencilla.",
+          description: "Conoce #SinFiltro las perspectivas de los expertos para el 2026.",
           ctaLabel: "Ver video",
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
