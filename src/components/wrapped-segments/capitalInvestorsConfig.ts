@@ -117,9 +117,9 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: "Inversiones en dólares (Offshore)",
           description: "Diversifica tu portafolio, invirtiendo en dólares en Estados Unidos.",
           bullets: [
-            "100% digital y rápido.",
-            "Asesoría y planificación en dólares.",
-            "Inversión con libertad, liquidez y eficiencia fiscal.",
+            "Acceso a una economía más robusta y diversificada.",
+            "Protección ante la devaluación local.",
+            "Oportunidad de invertir en sectores con alto potencial de crecimiento.",
           ],
         },
         {
