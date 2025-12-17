@@ -136,7 +136,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       summaryStatement: "Contenido pensado para quienes están comenzando su camino.",
       cards: [
         {
-          title: "Diseñar Riqueza",
+          title: "SK Channel Diseñando Riqueza",
           description: "Aprende a organizar tu plan financiero desde cero.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/mesa-redonda",
