@@ -135,7 +135,7 @@ export const SegmentModuleSection = ({
                             </div>}
                           <div className="flex-1">
                             <h3 className="text-xl font-bold text-foreground mb-2">{card.title}</h3>
-                            {card.description && <p className="text-muted-foreground mb-4">{card.description}</p>}
+                            {card.description}
                             {card.bullets && card.bullets.length > 0 && <ul className="space-y-2 mb-4">
                                 {card.bullets.map((bullet, bulletIndex) => <li key={bulletIndex} className="flex items-start gap-3 text-foreground/80">
                                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
