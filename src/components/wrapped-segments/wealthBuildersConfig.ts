@@ -126,7 +126,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       summaryStatement: "Recursos exclusivos para potenciar tu estrategia financiera.",
       cards: [
         {
-          title: "Inversiones 2.0",
+          title: "SK Channel Inversiones 2.0",
           description: "Aprende estrategias avanzadas de los expertos.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/tu-clase-sobre-renta-fija-vs-renta-variable",
