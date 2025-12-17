@@ -143,7 +143,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
     {
       id: "herramientas",
       icon: "Compass",
-      headline: "Centro de herramientas",
+      headline: "Tu Centro de Herramientas",
       title: "Recursos que te guían, informan y ayudan a invertir con más claridad",
       summaryStatement: "Información exclusiva para tomar decisiones más informadas.",
       cards: [
