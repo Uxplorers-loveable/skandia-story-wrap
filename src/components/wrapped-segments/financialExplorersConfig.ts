@@ -122,6 +122,8 @@ export const financialExplorersConfig: FESegmentConfig = {
             "Puedes hacer tus aportes por PSE, débito o descuento por nómina.",
             "Tu dinero estará invertido en portafolios estables y conservadores.",
           ],
+          ctaLabel: "Saber más",
+          ctaUrl: "https://bit.ly/3KD3TLP",
         },
       ],
       ctaLabel: "Contactar ahora",
