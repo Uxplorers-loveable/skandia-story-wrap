@@ -160,6 +160,6 @@ export const financialExplorersConfig: FESegmentConfig = {
     },
   ],
   finalMessage:
-    "Cada avance te acerca a un futuro más estable, que el próximo año sea clave para asegurar tu bienestar a largo plazo.",
+    "Este es tu punto de partida. Desde aquí, cada decisión te acerca más a la vida que quieres. Skandia te acompaña a subir de nivel, paso a paso.",
   hashtag: "#LibérateconSkandia",
 };
