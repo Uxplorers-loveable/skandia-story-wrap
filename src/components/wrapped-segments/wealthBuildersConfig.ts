@@ -142,7 +142,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
         },
         {
           title: "Perspectivas de inversión",
-          description: "Visión experta del mercado y tendencias.",
+          description: "Conoce #SinFiltro las perspectivas de los expertos para el 2026.",
           ctaLabel: "Ver video",
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
