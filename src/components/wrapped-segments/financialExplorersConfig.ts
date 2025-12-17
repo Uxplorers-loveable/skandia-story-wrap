@@ -111,6 +111,8 @@ export const financialExplorersConfig: FESegmentConfig = {
             "Gestionada por nuestro Centro Estratégico de Inversiones.",
             "Sin monto mínimo de inversión.",
           ],
+          ctaLabel: "Saber más",
+          ctaUrl: "https://inversiones.skandia.com.co/invested",
         },
         {
           title: "Los Universales",
