@@ -46,9 +46,7 @@ export const SegmentHeroSection = ({
         </p>
         
         <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight leading-tight md:text-5xl">
-          Es momento de descubrir cómo
-          <br />
-          <span className="text-primary">subir de nivel</span> en el 2026.
+          Es momento de descubrir cómo <span className="text-primary">subir de nivel</span> en el 2026.
         </h1>
 
         {/* Scroll indicator */}
