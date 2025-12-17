@@ -58,7 +58,7 @@ export const financialExplorersConfig: FESegmentConfig = {
     {
       id: "resumen-2025",
       icon: "TrendingUp",
-      headline: "Tu 2025 en números",
+      headline: "Tu IQ Financiero #SinFiltro 2025 es: 52/100 – Nivel: Financial Explorer.",
       title: "Estos son los números que te definen como Financial Explorer.",
       summaryStatement: "Este año tus finanzas dieron un paso que marca la diferencia:",
       statCards: [
