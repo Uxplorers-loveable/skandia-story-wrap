@@ -112,6 +112,8 @@ export const wealthBuildersConfig: WBSegmentConfig = {
             "Brindan acceso a tendencias globales y nuevas economías.",
             "Complementan tu estrategia con activos innovadores.",
           ],
+          ctaLabel: "Ver más",
+          ctaUrl: "https://inversiones.skandia.com.co/nuestros-portafolios-alternativos",
         },
       ],
       ctaLabel: "Contactar ahora",
