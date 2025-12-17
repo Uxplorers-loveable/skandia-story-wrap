@@ -132,7 +132,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       id: "herramientas",
       icon: "Compass",
       headline: "Centro de herramientas",
-      title: "Recursos que te ayudan a mejorar tu futuro financiero",
+      title: "Todo lo que necesitas para avanzar al siguiente nivel",
       summaryStatement: "Contenido pensado para quienes están comenzando su camino.",
       cards: [
         {
