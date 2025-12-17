@@ -117,7 +117,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           description: "Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.",
           bullets: [
             "Elige la opción que se adapta a ti y simula tu inversión.",
-            "Inversiones en portafolios estables y conservadores.",
+            "Puedes hacer tus aportes por PSE, débito o descuento por nómina.",
             "Retiros sin costo.",
           ],
         },
