@@ -52,7 +52,7 @@ export interface CISegmentConfig {
 export const capitalInvestorsConfig: CISegmentConfig = {
   id: "capital-investors",
   clientName: "xxx",
-  welcomeGreeting: "Hola xxx, tus finanzas cambiaron durante el 2025.",
+  welcomeGreeting: "Hola xxx, eres un Capital Investor: Tú sí que sabes de estrategia.",
   welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
