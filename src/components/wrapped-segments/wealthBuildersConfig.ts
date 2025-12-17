@@ -99,7 +99,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       id: "oportunidades-2026",
       icon: "Lightbulb",
       headline: "Tus oportunidades 2026",
-      title: "En el 2026 encuentra tu potencial.",
+      title: "En el 2026 encuentra tu potencial",
       summaryStatement: "Descubre alternativas diseñadas para tu perfil de crecimiento.",
       cards: [
         {
