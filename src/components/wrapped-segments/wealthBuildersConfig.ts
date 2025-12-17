@@ -121,7 +121,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
     {
       id: "herramientas",
       icon: "Compass",
-      headline: "Kit Skandia",
+      headline: "Tu Centro de Herramientas",
       title: "Tus herramientas para avanzar hacia tus metas",
       summaryStatement: "Recursos exclusivos para potenciar tu estrategia financiera.",
       cards: [
