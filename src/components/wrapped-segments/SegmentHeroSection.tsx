@@ -36,15 +36,13 @@ export const SegmentHeroSection = ({
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/70 mb-6 font-light">
-          {personalizedGreeting.split('Financial Explorer').map((part, index, array) => (
-            <span key={index}>
+          {personalizedGreeting.split('Financial Explorer').map((part, index, array) => <span key={index}>
               {part}
               {index < array.length - 1 && <strong className="font-bold">Financial Explorer</strong>}
-            </span>
-          ))}
+            </span>)}
         </p>
         
-        <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 tracking-tight leading-tight">
+        <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight leading-tight md:text-5xl">
           Es momento de descubrir cómo
           <br />
           <span className="text-primary">subir de nivel</span> en el 2026.
