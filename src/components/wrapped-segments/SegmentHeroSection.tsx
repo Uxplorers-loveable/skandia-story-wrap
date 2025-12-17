@@ -36,7 +36,12 @@ export const SegmentHeroSection = ({
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/70 mb-6 font-light">
-          {personalizedGreeting}
+          {personalizedGreeting.split('Financial Explorer').map((part, index, array) => (
+            <span key={index}>
+              {part}
+              {index < array.length - 1 && <strong className="font-bold">Financial Explorer</strong>}
+            </span>
+          ))}
         </p>
         
         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 tracking-tight leading-tight">
