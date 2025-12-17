@@ -114,7 +114,7 @@ export const financialExplorersConfig: FESegmentConfig = {
         },
         {
           title: "Los Universales",
-          description: "Portafolios diseñados para invertir, ahorrar o construir un respaldo para el futuro.",
+          description: "Donde la inversión empieza con una simple elección:",
           bullets: [
             "Elige la opción que se adapta a ti y simula tu inversión.",
             "Puedes hacer tus aportes por PSE, débito o descuento por nómina.",
