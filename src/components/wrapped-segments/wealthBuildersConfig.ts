@@ -133,9 +133,9 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           icon: "BookOpen",
         },
         {
-          title: "Informe del CEI",
-          description: "Análisis detallado del panorama económico.",
-          ctaLabel: "Ver informe",
+          title: "Skandia #SinFiltro Report",
+          description: "2026: Presiona el botón de Reinicio Financiero.",
+          ctaLabel: "Leer informe",
           ctaUrl:
             "https://www.skandia.co/documents/39464/3278030/Informe+diario+-+10+de+Diciembre+de+2025.pdf/69e6d465-5980-de88-0d95-051cc0a7d664?t=1765403386383",
           icon: "FileText",
