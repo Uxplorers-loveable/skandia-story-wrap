@@ -123,7 +123,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           ],
         },
         {
-          title: "Crea Patrimonio",
+          title: "El valor de estar seguro",
           description: "Seguro individual de pensiones para ahorrar una reserva a largo plazo.",
           bullets: [
             "Flexibilidad para determinar beneficiarios y sobrevivientes.",
