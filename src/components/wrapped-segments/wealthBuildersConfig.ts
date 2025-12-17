@@ -70,9 +70,9 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           highlight: true,
         },
         {
-          label: "Crecimiento vs 2024",
-          value: "+22",
-          suffix: "%",
+          label: "Saldo total en MFUND",
+          value: "100",
+          suffix: "M",
           icon: "TrendingUp",
           highlight: true,
         },
