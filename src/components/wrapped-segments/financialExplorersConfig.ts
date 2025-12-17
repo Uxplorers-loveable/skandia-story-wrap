@@ -149,6 +149,13 @@ export const financialExplorersConfig: FESegmentConfig = {
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
         },
+        {
+          title: "Skandia #SinFiltro Report",
+          description: "2026: Presiona el botón de Reinicio Financiero.",
+          ctaLabel: "Leer informe",
+          ctaUrl: "",
+          icon: "FileText",
+        },
       ],
     },
   ],
