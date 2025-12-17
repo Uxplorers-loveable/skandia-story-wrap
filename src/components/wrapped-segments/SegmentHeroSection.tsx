@@ -36,10 +36,13 @@ export const SegmentHeroSection = ({
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/70 mb-6 font-light">
-          {personalizedGreeting.split('Financial Explorer').map((part, index, array) => <span key={index}>
-              {part}
-              {index < array.length - 1 && <strong className="font-bold">Financial Explorer</strong>}
-            </span>)}
+          {personalizedGreeting
+            .split(/(Financial Explorer|Wealth Builder|Capital Investor)/)
+            .map((part, index) => 
+              ['Financial Explorer', 'Wealth Builder', 'Capital Investor'].includes(part) 
+                ? <strong key={index} className="font-bold">{part}</strong>
+                : <span key={index}>{part}</span>
+            )}
         </p>
         
         <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight leading-tight md:text-5xl">
