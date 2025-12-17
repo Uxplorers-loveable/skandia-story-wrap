@@ -32,7 +32,7 @@ export const SegmentHeroSection = ({
         
         <div className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 mb-8 rounded-sm">
           <Sparkles className="w-5 h-5" />
-          <span className="font-medium">Tu Wrapped 2025</span>
+          <span className="font-medium">Tu IQ Financiero #SinFiltro 2025</span>
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/70 mb-6 font-light">
