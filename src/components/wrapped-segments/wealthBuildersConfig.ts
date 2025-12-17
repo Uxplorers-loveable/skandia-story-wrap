@@ -105,7 +105,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       summaryStatement: "Descubre alternativas diseñadas para tu perfil de crecimiento.",
       cards: [
         {
-          title: "Activos Alternativos",
+          title: "Descubre el poder de los Alternativos",
           description:
             "Incorporan activos que van más allá de la renta fija y las acciones tradicionales para diversificar tu portafolio y abrir nuevas fuentes de crecimiento.",
           bullets: [
