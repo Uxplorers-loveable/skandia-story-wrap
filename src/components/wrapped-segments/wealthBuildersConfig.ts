@@ -103,12 +103,12 @@ export const wealthBuildersConfig: WBSegmentConfig = {
       summaryStatement: "Descubre alternativas diseñadas para tu perfil de crecimiento.",
       cards: [
         {
-          title: "Fondos Alternativos",
+          title: "Activos Alternativos",
           description:
-            "Son inversiones que complementan tu portafolio con activos como Bitcoin o fondos de impacto, los cuales te permiten diversificar y captar nuevas fuentes de crecimiento.",
+            "Incorporan activos que van más allá de la renta fija y las acciones tradicionales para diversificar tu portafolio y abrir nuevas fuentes de crecimiento.",
           bullets: [
             "Amplían tus fuentes de rentabilidad.",
-            "Reducen la dependencia de mercados tradicionales.",
+            "Reducen la dependencia de los mercados tradicionales.",
             "Brindan acceso a tendencias globales y nuevas economías.",
             "Complementan tu estrategia con activos innovadores.",
           ],
