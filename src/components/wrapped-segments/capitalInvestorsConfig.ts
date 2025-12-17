@@ -103,13 +103,14 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       summaryStatement: "Soluciones sofisticadas diseñadas para inversionistas como tú.",
       cards: [
         {
-          title: "Fondos Alternativos",
+          title: "El poder de los Alternativos.",
           description:
-            "Inversiones que complementan tu portafolio, permitiendo diversificar y captar nuevas fuentes de crecimiento.",
+            "Incorporan activos que van más allá de la renta fija y las acciones tradicionales para diversificar tu portafolio y abrir nuevas fuentes de crecimiento.",
           bullets: [
-            "Posibilidades de aumentar la rentabilidad.",
+            "Amplían tus fuentes de rentabilidad.",
             "Reducen la dependencia de los mercados tradicionales.",
-            "Conectan con nuevas tendencias y economías emergentes.",
+            "Brindan acceso a tendencias globales y nuevas economías.",
+            "Complementan tu estrategia con activos innovadores.",
           ],
         },
         {
