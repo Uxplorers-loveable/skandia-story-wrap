@@ -19,6 +19,8 @@ export interface WBModuleConfig {
   insight?: string;
   closingMessage?: string;
   ctaLabel?: string;
+  advisoryTitle?: string;
+  advisoryDescription?: string;
 }
 
 export interface CardConfig {
@@ -117,6 +119,8 @@ export const wealthBuildersConfig: WBSegmentConfig = {
         },
       ],
       ctaLabel: "Contactar ahora",
+      advisoryTitle: "Habla con tu Financial Planner.",
+      advisoryDescription: "Te ayudará a entender en dónde están las oportunidades que pueden potenciar tu nivel.",
     },
     {
       id: "herramientas",
