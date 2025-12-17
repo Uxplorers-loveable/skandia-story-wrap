@@ -58,7 +58,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
     {
       id: "resumen-2025",
       icon: "TrendingUp",
-      headline: "Tu 2025 en números",
+      headline: "Tu IQ Financiero es 88/100 – Nivel: Capital Investor",
       title: "Así optimizaste tu rendimiento durante el año",
       summaryStatement: "Tu visión estratégica y disciplina generaron resultados excepcionales.",
       statCards: [
