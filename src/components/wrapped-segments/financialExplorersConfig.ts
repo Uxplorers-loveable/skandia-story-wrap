@@ -99,7 +99,7 @@ export const financialExplorersConfig: FESegmentConfig = {
       id: "oportunidades-2026",
       icon: "Lightbulb",
       headline: "Tus oportunidades 2026",
-      title: "Construye bienestar a futuro con estas opciones",
+      title: "Es momento de llevar tu IQ #SinFiltro al siguiente nivel",
       summaryStatement: "Alternativas sencillas y accesibles para dar tus primeros pasos.",
       cards: [
         {
