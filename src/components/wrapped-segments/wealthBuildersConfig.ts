@@ -52,7 +52,7 @@ export interface WBSegmentConfig {
 export const wealthBuildersConfig: WBSegmentConfig = {
   id: "wealth-builders",
   clientName: "xxx",
-  welcomeGreeting: "Hola xxx, tus finanzas cambiaron durante el 2025.",
+  welcomeGreeting: "Hola xxx, eres un Wealth Builder: Así se ve el nivel de alguien que construye patrimonio.",
   welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
