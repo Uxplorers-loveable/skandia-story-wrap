@@ -106,9 +106,10 @@ export const financialExplorersConfig: FESegmentConfig = {
           title: "Invest-ed",
           description: "Una herramienta de diversificación e inversión, probando diferentes activos.",
           bullets: [
-            "100% digital.",
-            "Libertad de invertir cualquier monto.",
-            "Solución tecnológica que facilita la estrategia de inversión.",
+            "100% digital de Skandia.",
+            "Alineada con tus objetivos y metas de inversión.",
+            "Gestionada por nuestro Centro Estratégico de Inversiones.",
+            "Sin monto mínimo de inversión.",
           ],
         },
         {
