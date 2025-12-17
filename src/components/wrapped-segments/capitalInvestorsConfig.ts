@@ -149,7 +149,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       cards: [
         {
           title: "SK Channel Inversiones Internacionales",
-          description: "Perspectiva experta de los principales mercados.",
+          description: "Un viaje por el mundo de las inversiones internacionales.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/inversiones-internacionales",
           icon: "BookOpen",
