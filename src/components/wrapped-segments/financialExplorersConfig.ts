@@ -52,7 +52,8 @@ export interface FESegmentConfig {
 export const financialExplorersConfig: FESegmentConfig = {
   id: "financial-explorers",
   clientName: "xxx",
-  welcomeGreeting: "Hola xxx, eres un Financial Explorer: ya dejaste atrás el \"algún día\" y diste tu primer paso para ocuparte de tu futuro,",
+  welcomeGreeting:
+    'Hola xxx, eres un Financial Explorer: ya dejaste atrás el "algún día" y diste tu primer paso para ocuparte de tu futuro,',
   welcomeHeadline: "Es momento de explorar tu futuro financiero este 2026.",
   modules: [
     {
@@ -92,8 +93,7 @@ export const financialExplorersConfig: FESegmentConfig = {
         },
       ],
       statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
-      closingMessage:
-        "Lo más difícil ya lo hiciste: empezar. ¡Es momento de subir de nivel en el 2026!",
+      closingMessage: "Lo más difícil ya lo hiciste: empezar. ¡Es momento de subir de nivel en el 2026!",
     },
     {
       id: "oportunidades-2026",
@@ -111,7 +111,7 @@ export const financialExplorersConfig: FESegmentConfig = {
             "Gestionada por nuestro Centro Estratégico de Inversiones.",
             "Sin monto mínimo de inversión.",
           ],
-          ctaLabel: "Saber más",
+          ctaLabel: "Ver más",
           ctaUrl: "https://inversiones.skandia.com.co/invested",
         },
         {
@@ -122,7 +122,7 @@ export const financialExplorersConfig: FESegmentConfig = {
             "Puedes hacer tus aportes por PSE, débito o descuento por nómina.",
             "Tu dinero estará invertido en portafolios estables y conservadores.",
           ],
-          ctaLabel: "Saber más",
+          ctaLabel: "Ver más",
           ctaUrl: "https://bit.ly/3KD3TLP",
         },
       ],
@@ -131,12 +131,12 @@ export const financialExplorersConfig: FESegmentConfig = {
     {
       id: "herramientas",
       icon: "Compass",
-      headline: "Tu Centro de Herramientas",
-      title: "Todo lo que necesitas para avanzar al siguiente nivel",
+      headline: "Centro de herramientas",
+      title: "Recursos que te ayudan a mejorar tu futuro financiero",
       summaryStatement: "Contenido pensado para quienes están comenzando su camino.",
       cards: [
         {
-          title: "SK Channel Diseñando Riqueza",
+          title: "Diseñar Riqueza",
           description: "Aprende a organizar tu plan financiero desde cero.",
           ctaLabel: "Ver curso",
           ctaUrl: "https://channel.skandia.com.co/course/mesa-redonda",
@@ -144,7 +144,7 @@ export const financialExplorersConfig: FESegmentConfig = {
         },
         {
           title: "Perspectivas de inversión",
-          description: "Conoce #SinFiltro las perspectivas de los expertos para el 2026.",
+          description: "Aprende finanzas personales de forma sencilla.",
           ctaLabel: "Ver video",
           ctaUrl: "https://youtu.be/ZTbDFmpB9Bs",
           icon: "Play",
