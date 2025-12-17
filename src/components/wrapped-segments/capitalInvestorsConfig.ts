@@ -19,6 +19,8 @@ export interface CIModuleConfig {
   insight?: string;
   closingMessage?: string;
   ctaLabel?: string;
+  advisoryTitle?: string;
+  advisoryDescription?: string;
 }
 
 export interface CardConfig {
@@ -139,6 +141,8 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
       ],
       ctaLabel: "Contactar ahora",
+      advisoryTitle: "Habla con tu Financial Planner.",
+      advisoryDescription: "Te ayudará a definir que será clave para tus inversiones en el 2026.",
     },
     {
       id: "herramientas",
