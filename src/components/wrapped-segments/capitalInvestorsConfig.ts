@@ -93,7 +93,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       ],
       statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
-        "Desde este nivel, el reto ya no es \"tener más\", sino decidir mejor cómo quieres que tu capital trabaje para ti.",
+        'Desde este nivel, el reto ya no es "tener más", sino decidir mejor cómo quieres que tu capital trabaje para ti.',
     },
     {
       id: "oportunidades-2026",
@@ -158,8 +158,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           title: "Skandia #SinFiltro Report",
           description: "Análisis detallado del panorama económico.",
           ctaLabel: "Ver informe",
-          ctaUrl:
-            "https://www.skandia.co/documents/39464/2061583/Informe+Econ%C3%B3mico+Semanal+-+08+al+12+de+Diciembre+de+2025.pdf/60b53799-df89-95d9-d5cd-7ab63afe4056?t=1765583894746",
+          ctaUrl: "https://bit.ly/3YELl0N",
           icon: "FileText",
         },
         {
