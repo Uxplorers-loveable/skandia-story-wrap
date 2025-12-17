@@ -93,7 +93,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
       ],
       statCardsDisclaimer: "Cifras actualizadas al 30 de noviembre de 2025",
       closingMessage:
-        "2026 puede ser el año para capitalizar nuevas oportunidades. Descubre las alternativas que ponemos a tu alcance.",
+        "Desde este nivel, el reto ya no es \"tener más\", sino decidir mejor cómo quieres que tu capital trabaje para ti.",
     },
     {
       id: "oportunidades-2026",
