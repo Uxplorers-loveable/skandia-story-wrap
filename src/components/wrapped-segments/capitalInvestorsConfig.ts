@@ -141,7 +141,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
         },
       ],
       ctaLabel: "Contactar ahora",
-      advisoryTitle: "Descubre el poder de los Alternativos",
+      advisoryTitle: "Habla con tu Financial Planner",
       advisoryDescription: "Te ayudará a definir que será clave para tus inversiones en el 2026.",
     },
     {
