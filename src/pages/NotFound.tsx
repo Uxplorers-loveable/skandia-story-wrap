@@ -57,7 +57,7 @@ const NotFound = () => {
         {/* CTAs */}
         <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 transition-all duration-1000 delay-600 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           {/* Primary CTA */}
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base font-medium group" onClick={() => window.location.href = 'https://skandia.com.co'}>
+          <Button size="lg" onClick={() => window.location.href = 'https://skandia.com.co'} className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base font-medium group rounded-full">
             Explorar mi futuro financiero
             <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
