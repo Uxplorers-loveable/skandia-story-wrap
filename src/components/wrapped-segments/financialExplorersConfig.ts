@@ -126,7 +126,7 @@ export const financialExplorersConfig: FESegmentConfig = {
           ctaUrl: "https://bit.ly/3KD3TLP",
         },
       ],
-      ctaLabel: "Contactar ahora",
+      ctaLabel: "Contactar",
     },
     {
       id: "herramientas",

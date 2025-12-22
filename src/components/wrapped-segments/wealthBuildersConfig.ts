@@ -118,7 +118,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
           ctaUrl: "https://inversiones.skandia.com.co/nuestros-portafolios-alternativos",
         },
       ],
-      ctaLabel: "Contactar ahora",
+      ctaLabel: "Contactar",
       advisoryTitle: "Habla con tu Financial Planner.",
       advisoryDescription: "Te ayudará a entender en dónde están las oportunidades que pueden potenciar tu nivel.",
     },
