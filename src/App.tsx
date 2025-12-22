@@ -24,6 +24,7 @@ const App = () => (
           <Route path="/wealth-builders" element={<WrappedWealthBuilders />} />
           <Route path="/capital-investors" element={<WrappedCapitalInvestors />} />
           <Route path="/financial-explorers" element={<WrappedFinancialExplorers />} />
+          <Route path="/not-found" element={<NotFound />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
