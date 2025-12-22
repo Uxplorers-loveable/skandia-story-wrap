@@ -67,9 +67,7 @@ const NotFound = () => {
         </div>
 
         {/* Microcopy */}
-        <p className={`text-sm text-muted-foreground font-light italic transition-all duration-1000 delay-700 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-          "Tu futuro no se detiene. Nosotros tampoco."
-        </p>
+        
       </div>
     </section>;
 };
