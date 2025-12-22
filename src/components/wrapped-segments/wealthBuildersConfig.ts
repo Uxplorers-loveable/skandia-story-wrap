@@ -119,7 +119,7 @@ export const wealthBuildersConfig: WBSegmentConfig = {
         },
       ],
       ctaLabel: "Contactar",
-      advisoryTitle: "Habla con tu Financial Planner.",
+      advisoryTitle: "Habla con tu Financial Planner",
       advisoryDescription: "Te ayudará a entender en dónde están las oportunidades que pueden potenciar tu nivel.",
     },
     {
