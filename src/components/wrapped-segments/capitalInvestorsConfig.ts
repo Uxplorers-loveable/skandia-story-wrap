@@ -140,7 +140,7 @@ export const capitalInvestorsConfig: CISegmentConfig = {
           ctaUrl: "https://www.skandia.co/seguros-de-vida/seguro-de-pensiones-crea-patrimonio",
         },
       ],
-      ctaLabel: "Contactar ahora",
+      ctaLabel: "Contactar",
       advisoryTitle: "Habla con tu Financial Planner",
       advisoryDescription: "Te ayudará a definir que será clave para tus inversiones en el 2026.",
     },
